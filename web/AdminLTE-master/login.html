@@ -1,0 +1,132 @@
+<script>
+    if (localStorage.getItem("idAdm")) {
+        location.replace("index.html");
+    }
+</script>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>sign up</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body class="form-login-body">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto login-desk">
+                <div class="row">
+                    <div class="col-md-7 detail-box">
+                        <img class="logo" src="pa1.jpg" alt="">
+                        <div class="detailsh">
+                            <img class="help" src="assets/images/help.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 loginform">
+                        <h4>Bienvenue</h4>
+                        <p>Connectez-vous à votre compte</p>
+                        <div class="login-det" onsubmit="return false">
+                            <div class="form-row">
+                                <label for="">Email</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">
+                                                    <i class="far fa-user"></i>
+                                                </span>
+                                    </div>
+                                    <input type="email" class="form-control" placeholder="Enter Email" aria-label="Username" aria-describedby="basic-addon1" id="email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label for="">Mot de passe</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">
+                                                    <i class="fas fa-lock"></i>
+                                                </span>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="Enter mot de passe" aria-label="Username" aria-describedby="basic-addon1" id="password">
+                                </div>
+                            </div>
+
+
+
+                            <button class="btn btn-sm btn-danger" onclick="login()">connexion</button>
+
+
+                            <span id="error"></span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            var error = document.getElementById("error")
+            var url = "http://127.0.0.1:3000/admins"; //definir la collection a manupiler
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value; // récupération de la password saisir dans notre code html
+            var xhr = new XMLHttpRequest(); // definir une request de connection standard js
+            xhr.open("GET", url, true); // choisir la méthode get comme une méthode d'accès au serveur et récupérer les données .
+            xhr.setRequestHeader("Content-type", "application/json; charset=utf-8"); // choisir l'encodage utf-8 pour que la resultat retourne peux avoir différents format de text comme les côté , les accent …..
+            xhr.onload = function() {
+                // load les données à partir de la serveur -> début connection
+                var users = JSON.parse(xhr.responseText); // conversion des données en format json
+                if (xhr.readyState == 4 && xhr.status == "200") {
+                    // if la status retourné par la serveur est 200 donc ont dans le cas succes
+                    access = false; // définir une variable access par défaut avec la valeur false
+                    /* bouclé la liste des utilisateurs */
+                    for (i = 0; i < users.length; i++) {
+                        if (users[i].email == email && users[i].password == password) {
+                            // if les données recuperer et la valeur auctual dans la base sont égaux alors en changer access a true .
+                            access = true;
+                            idAdmin = users[i]._id;
+                            idSuper = users[i].status
+                        }
+                    }
+
+                    // si la variable accès contient true on est autorisé à accéder.
+                    if (access) {
+
+                        localStorage.setItem("idAdm", idAdmin);
+                        localStorage.setItem("idsup", idSuper);
+                        location.replace("index.html");
+                    } else {
+                        error.innerHTML = "<span style='color: red;'>" +
+                            "**Adresse ou mot de passe incorrect!!</span>"
+                    }
+                } else {
+                    alert("erreur de connexion");
+                }
+            };
+            xhr.send();
+        }
+    </script>
+
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>

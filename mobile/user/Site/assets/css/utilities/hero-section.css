@@ -1,0 +1,16 @@
+/* HOVER SECTION */
+
+.hero-section-parent {
+	position: relative;
+}
+.hero-section-container-tl,
+.hero-section-container-tr,
+.hero-section-container-bl,
+.hero-section-container-br {
+	position: absolute;
+	z-index: 10;
+}
+.hero-section-container-tl { top: 0; 	left: 0;  }
+.hero-section-container-tr { top: 0; 	right: 0; }
+.hero-section-container-bl { bottom: 0; left: 0;  }
+.hero-section-container-br { bottom: 0; right: 0; }

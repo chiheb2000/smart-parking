@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var d = window.confirm("want to Delete");
+        if (d == true) {
+            var url_string = window.location.href //=file:///C:/Users/jabeu/OneDrive/Desktop/Projet/exemple/delete.html?id=606c1993029c803ba88bae18
+            var url = new URL(url_string); //=file:///C:/Users/jabeu/OneDrive/Desktop/Projet/exemple/delete.html?id=606c1993029c803ba88bae18
+            var c = url.searchParams.get("id"); //=606c1993029c803ba88bae18
+            console.log(c);
+            // Post a user
+            var url3 = "http://172.20.10.4:3000/users/" + c;
+            var xhr3 = new XMLHttpRequest();
+            xhr3.open("DELETE", url3, true);
+            xhr3.onload = function() {
+                if (xhr3.readyState == 4 && xhr3.status == "200") {
+                    location.replace("listUsr.html");
+                    event.preventDefault();
+                } else {
+                    console.log("error");
+                }
+            }
+            xhr3.send(null);
+        } else {
+            location.replace("index.html");
+        }
+    </script>
+</body>
+
+</html>

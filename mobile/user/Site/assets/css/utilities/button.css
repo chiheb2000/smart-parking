@@ -1,0 +1,28 @@
+/* BUTTON */
+
+.btn-xs { padding: 0.2rem 1.0rem; font-size: 0.8rem; }
+.btn-sm { padding: 0.4rem 1.7rem; font-size: 0.9rem; }
+.btn-md { padding: 0.6rem 2.6rem; font-size: 1.0rem; }
+.btn-lg { padding: 0.7rem 3.3rem; font-size: 1.2rem; }
+.btn-xl { padding: 1.2rem 4.0rem; font-size: 1.4rem; }
+
+/*.btn { border: none; }*/
+.btn-icon-left span:last-child {
+    float: left;
+    margin-left: -15%;
+}
+.btn-icon-right span:last-child {
+    float: right;
+    margin-right: -15%;
+}
+.btn-icon-center span {
+  display: block;
+}
+
+.btn.active {
+	/*border: none !important;*/
+	/*box-shadow: none !important;*/
+}
+.btn:focus {
+	box-shadow: none !important;
+}

@@ -1,0 +1,200 @@
+/* SOCIAL COLORS */
+
+/* Facebook */ 
+.bc-v1-facebook, .bc-v1-facebook--hover:hover { border-color: rgba(59, 89, 152, 0.1)!important; }
+.bc-v2-facebook, .bc-v2-facebook--hover:hover { border-color: rgba(59, 89, 152, 0.2)!important; }
+.bc-v3-facebook, .bc-v3-facebook--hover:hover { border-color: rgba(59, 89, 152, 0.3)!important; }
+.bc-v4-facebook, .bc-v4-facebook--hover:hover { border-color: rgba(59, 89, 152, 0.4)!important; }
+.bc-v5-facebook, .bc-v5-facebook--hover:hover { border-color: rgba(59, 89, 152, 0.5)!important; }
+.bc-v6-facebook, .bc-v6-facebook--hover:hover { border-color: rgba(59, 89, 152, 0.6)!important; }
+.bc-v7-facebook, .bc-v7-facebook--hover:hover { border-color: rgba(59, 89, 152, 0.7)!important; }
+.bc-v8-facebook, .bc-v8-facebook--hover:hover { border-color: rgba(59, 89, 152, 0.8)!important; }
+.bc-v9-facebook, .bc-v9-facebook--hover:hover { border-color: rgba(59, 89, 152, 0.9)!important; }
+.bc-facebook, .bc-facebook--hover:hover { border-color: rgba(59, 89, 152, 1); }
+/* Pinterest */ 
+.bc-v1-pinterest, .bc-v1-pinterest--hover:hover { border-color: rgba(187, 8, 29, 0.1)!important; }
+.bc-v2-pinterest, .bc-v2-pinterest--hover:hover { border-color: rgba(187, 8, 29, 0.2)!important; }
+.bc-v3-pinterest, .bc-v3-pinterest--hover:hover { border-color: rgba(187, 8, 29, 0.3)!important; }
+.bc-v4-pinterest, .bc-v4-pinterest--hover:hover { border-color: rgba(187, 8, 29, 0.4)!important; }
+.bc-v5-pinterest, .bc-v5-pinterest--hover:hover { border-color: rgba(187, 8, 29, 0.5)!important; }
+.bc-v6-pinterest, .bc-v6-pinterest--hover:hover { border-color: rgba(187, 8, 29, 0.6)!important; }
+.bc-v7-pinterest, .bc-v7-pinterest--hover:hover { border-color: rgba(187, 8, 29, 0.7)!important; }
+.bc-v8-pinterest, .bc-v8-pinterest--hover:hover { border-color: rgba(187, 8, 29, 0.8)!important; }
+.bc-v9-pinterest, .bc-v9-pinterest--hover:hover { border-color: rgba(187, 8, 29, 0.9)!important; }
+.bc-pinterest, .bc-pinterest--hover:hover { border-color: rgba(187, 8, 29, 1); }
+/* Linkedin */ 
+.bc-v1-linkedin, .bc-v1-linkedin--hover:hover { border-color: rgba(0, 119, 181, 0.1)!important; }
+.bc-v2-linkedin, .bc-v2-linkedin--hover:hover { border-color: rgba(0, 119, 181, 0.2)!important; }
+.bc-v3-linkedin, .bc-v3-linkedin--hover:hover { border-color: rgba(0, 119, 181, 0.3)!important; }
+.bc-v4-linkedin, .bc-v4-linkedin--hover:hover { border-color: rgba(0, 119, 181, 0.4)!important; }
+.bc-v5-linkedin, .bc-v5-linkedin--hover:hover { border-color: rgba(0, 119, 181, 0.5)!important; }
+.bc-v6-linkedin, .bc-v6-linkedin--hover:hover { border-color: rgba(0, 119, 181, 0.6)!important; }
+.bc-v7-linkedin, .bc-v7-linkedin--hover:hover { border-color: rgba(0, 119, 181, 0.7)!important; }
+.bc-v8-linkedin, .bc-v8-linkedin--hover:hover { border-color: rgba(0, 119, 181, 0.8)!important; }
+.bc-v9-linkedin, .bc-v9-linkedin--hover:hover { border-color: rgba(0, 119, 181, 0.9)!important; }
+.bc-linkedin, .bc-linkedin--hover:hover { border-color: rgba(0, 119, 181, 1); }
+/* Youtube */ 
+.bc-v1-youtube, .bc-v1-youtube--hover:hover { border-color: rgba(255, 0, 0, 0.1)!important; }
+.bc-v2-youtube, .bc-v2-youtube--hover:hover { border-color: rgba(255, 0, 0, 0.2)!important; }
+.bc-v3-youtube, .bc-v3-youtube--hover:hover { border-color: rgba(255, 0, 0, 0.3)!important; }
+.bc-v4-youtube, .bc-v4-youtube--hover:hover { border-color: rgba(255, 0, 0, 0.4)!important; }
+.bc-v5-youtube, .bc-v5-youtube--hover:hover { border-color: rgba(255, 0, 0, 0.5)!important; }
+.bc-v6-youtube, .bc-v6-youtube--hover:hover { border-color: rgba(255, 0, 0, 0.6)!important; }
+.bc-v7-youtube, .bc-v7-youtube--hover:hover { border-color: rgba(255, 0, 0, 0.7)!important; }
+.bc-v8-youtube, .bc-v8-youtube--hover:hover { border-color: rgba(255, 0, 0, 0.8)!important; }
+.bc-v9-youtube, .bc-v9-youtube--hover:hover { border-color: rgba(255, 0, 0, 0.9)!important; }
+.bc-youtube, .bc-youtube--hover:hover { border-color: rgba(255, 0, 0, 1); }
+/* Twitter */ 
+.bc-v1-twitter, .bc-v1-twitter--hover:hover { border-color: rgba(0, 172, 237, 0.1)!important; }
+.bc-v2-twitter, .bc-v2-twitter--hover:hover { border-color: rgba(0, 172, 237, 0.2)!important; }
+.bc-v3-twitter, .bc-v3-twitter--hover:hover { border-color: rgba(0, 172, 237, 0.3)!important; }
+.bc-v4-twitter, .bc-v4-twitter--hover:hover { border-color: rgba(0, 172, 237, 0.4)!important; }
+.bc-v5-twitter, .bc-v5-twitter--hover:hover { border-color: rgba(0, 172, 237, 0.5)!important; }
+.bc-v6-twitter, .bc-v6-twitter--hover:hover { border-color: rgba(0, 172, 237, 0.6)!important; }
+.bc-v7-twitter, .bc-v7-twitter--hover:hover { border-color: rgba(0, 172, 237, 0.7)!important; }
+.bc-v8-twitter, .bc-v8-twitter--hover:hover { border-color: rgba(0, 172, 237, 0.8)!important; }
+.bc-v9-twitter, .bc-v9-twitter--hover:hover { border-color: rgba(0, 172, 237, 0.9)!important; }
+.bc-twitter, .bc-twitter--hover:hover { border-color: rgba(0, 172, 237, 1); }
+/* Dribbble */ 
+.bc-v1-dribbble, .bc-v1-dribbble--hover:hover { border-color: rgba(223, 76, 131, 0.1)!important; }
+.bc-v2-dribbble, .bc-v2-dribbble--hover:hover { border-color: rgba(223, 76, 131, 0.2)!important; }
+.bc-v3-dribbble, .bc-v3-dribbble--hover:hover { border-color: rgba(223, 76, 131, 0.3)!important; }
+.bc-v4-dribbble, .bc-v4-dribbble--hover:hover { border-color: rgba(223, 76, 131, 0.4)!important; }
+.bc-v5-dribbble, .bc-v5-dribbble--hover:hover { border-color: rgba(223, 76, 131, 0.5)!important; }
+.bc-v6-dribbble, .bc-v6-dribbble--hover:hover { border-color: rgba(223, 76, 131, 0.6)!important; }
+.bc-v7-dribbble, .bc-v7-dribbble--hover:hover { border-color: rgba(223, 76, 131, 0.7)!important; }
+.bc-v8-dribbble, .bc-v8-dribbble--hover:hover { border-color: rgba(223, 76, 131, 0.8)!important; }
+.bc-v9-dribbble, .bc-v9-dribbble--hover:hover { border-color: rgba(223, 76, 131, 0.9)!important; }
+.bc-dribbble, .bc-dribbble--hover:hover { border-color: rgba(223, 76, 131, 1); }
+/* Facebook */ 
+.bg-v1-facebook, .bg-v1-facebook--hover:hover { background: rgba(59, 89, 152, 0.1)!important; }
+.bg-v2-facebook, .bg-v2-facebook--hover:hover { background: rgba(59, 89, 152, 0.2)!important; }
+.bg-v3-facebook, .bg-v3-facebook--hover:hover { background: rgba(59, 89, 152, 0.3)!important; }
+.bg-v4-facebook, .bg-v4-facebook--hover:hover { background: rgba(59, 89, 152, 0.4)!important; }
+.bg-v5-facebook, .bg-v5-facebook--hover:hover { background: rgba(59, 89, 152, 0.5)!important; }
+.bg-v6-facebook, .bg-v6-facebook--hover:hover { background: rgba(59, 89, 152, 0.6)!important; }
+.bg-v7-facebook, .bg-v7-facebook--hover:hover { background: rgba(59, 89, 152, 0.7)!important; }
+.bg-v8-facebook, .bg-v8-facebook--hover:hover { background: rgba(59, 89, 152, 0.8)!important; }
+.bg-v9-facebook, .bg-v9-facebook--hover:hover { background: rgba(59, 89, 152, 0.9)!important; }
+.bg-facebook, .bg-facebook--hover:hover { background: rgba(59, 89, 152, 1); }
+/* Pinterest */ 
+.bg-v1-pinterest, .bg-v1-pinterest--hover:hover { background: rgba(187, 8, 29, 0.1)!important; }
+.bg-v2-pinterest, .bg-v2-pinterest--hover:hover { background: rgba(187, 8, 29, 0.2)!important; }
+.bg-v3-pinterest, .bg-v3-pinterest--hover:hover { background: rgba(187, 8, 29, 0.3)!important; }
+.bg-v4-pinterest, .bg-v4-pinterest--hover:hover { background: rgba(187, 8, 29, 0.4)!important; }
+.bg-v5-pinterest, .bg-v5-pinterest--hover:hover { background: rgba(187, 8, 29, 0.5)!important; }
+.bg-v6-pinterest, .bg-v6-pinterest--hover:hover { background: rgba(187, 8, 29, 0.6)!important; }
+.bg-v7-pinterest, .bg-v7-pinterest--hover:hover { background: rgba(187, 8, 29, 0.7)!important; }
+.bg-v8-pinterest, .bg-v8-pinterest--hover:hover { background: rgba(187, 8, 29, 0.8)!important; }
+.bg-v9-pinterest, .bg-v9-pinterest--hover:hover { background: rgba(187, 8, 29, 0.9)!important; }
+.bg-pinterest, .bg-pinterest--hover:hover { background: rgba(187, 8, 29, 1); }
+/* Linkedin */ 
+.bg-v1-linkedin, .bg-v1-linkedin--hover:hover { background: rgba(0, 119, 181, 0.1)!important; }
+.bg-v2-linkedin, .bg-v2-linkedin--hover:hover { background: rgba(0, 119, 181, 0.2)!important; }
+.bg-v3-linkedin, .bg-v3-linkedin--hover:hover { background: rgba(0, 119, 181, 0.3)!important; }
+.bg-v4-linkedin, .bg-v4-linkedin--hover:hover { background: rgba(0, 119, 181, 0.4)!important; }
+.bg-v5-linkedin, .bg-v5-linkedin--hover:hover { background: rgba(0, 119, 181, 0.5)!important; }
+.bg-v6-linkedin, .bg-v6-linkedin--hover:hover { background: rgba(0, 119, 181, 0.6)!important; }
+.bg-v7-linkedin, .bg-v7-linkedin--hover:hover { background: rgba(0, 119, 181, 0.7)!important; }
+.bg-v8-linkedin, .bg-v8-linkedin--hover:hover { background: rgba(0, 119, 181, 0.8)!important; }
+.bg-v9-linkedin, .bg-v9-linkedin--hover:hover { background: rgba(0, 119, 181, 0.9)!important; }
+.bg-linkedin, .bg-linkedin--hover:hover { background: rgba(0, 119, 181, 1); }
+/* Youtube */ 
+.bg-v1-youtube, .bg-v1-youtube--hover:hover { background: rgba(255, 0, 0, 0.1)!important; }
+.bg-v2-youtube, .bg-v2-youtube--hover:hover { background: rgba(255, 0, 0, 0.2)!important; }
+.bg-v3-youtube, .bg-v3-youtube--hover:hover { background: rgba(255, 0, 0, 0.3)!important; }
+.bg-v4-youtube, .bg-v4-youtube--hover:hover { background: rgba(255, 0, 0, 0.4)!important; }
+.bg-v5-youtube, .bg-v5-youtube--hover:hover { background: rgba(255, 0, 0, 0.5)!important; }
+.bg-v6-youtube, .bg-v6-youtube--hover:hover { background: rgba(255, 0, 0, 0.6)!important; }
+.bg-v7-youtube, .bg-v7-youtube--hover:hover { background: rgba(255, 0, 0, 0.7)!important; }
+.bg-v8-youtube, .bg-v8-youtube--hover:hover { background: rgba(255, 0, 0, 0.8)!important; }
+.bg-v9-youtube, .bg-v9-youtube--hover:hover { background: rgba(255, 0, 0, 0.9)!important; }
+.bg-youtube, .bg-youtube--hover:hover { background: rgba(255, 0, 0, 1); }
+/* Twitter */ 
+.bg-v1-twitter, .bg-v1-twitter--hover:hover { background: rgba(0, 172, 237, 0.1)!important; }
+.bg-v2-twitter, .bg-v2-twitter--hover:hover { background: rgba(0, 172, 237, 0.2)!important; }
+.bg-v3-twitter, .bg-v3-twitter--hover:hover { background: rgba(0, 172, 237, 0.3)!important; }
+.bg-v4-twitter, .bg-v4-twitter--hover:hover { background: rgba(0, 172, 237, 0.4)!important; }
+.bg-v5-twitter, .bg-v5-twitter--hover:hover { background: rgba(0, 172, 237, 0.5)!important; }
+.bg-v6-twitter, .bg-v6-twitter--hover:hover { background: rgba(0, 172, 237, 0.6)!important; }
+.bg-v7-twitter, .bg-v7-twitter--hover:hover { background: rgba(0, 172, 237, 0.7)!important; }
+.bg-v8-twitter, .bg-v8-twitter--hover:hover { background: rgba(0, 172, 237, 0.8)!important; }
+.bg-v9-twitter, .bg-v9-twitter--hover:hover { background: rgba(0, 172, 237, 0.9)!important; }
+.bg-twitter, .bg-twitter--hover:hover { background: rgba(0, 172, 237, 1); }
+/* Dribbble */ 
+.bg-v1-dribbble, .bg-v1-dribbble--hover:hover { background: rgba(223, 76, 131, 0.1)!important; }
+.bg-v2-dribbble, .bg-v2-dribbble--hover:hover { background: rgba(223, 76, 131, 0.2)!important; }
+.bg-v3-dribbble, .bg-v3-dribbble--hover:hover { background: rgba(223, 76, 131, 0.3)!important; }
+.bg-v4-dribbble, .bg-v4-dribbble--hover:hover { background: rgba(223, 76, 131, 0.4)!important; }
+.bg-v5-dribbble, .bg-v5-dribbble--hover:hover { background: rgba(223, 76, 131, 0.5)!important; }
+.bg-v6-dribbble, .bg-v6-dribbble--hover:hover { background: rgba(223, 76, 131, 0.6)!important; }
+.bg-v7-dribbble, .bg-v7-dribbble--hover:hover { background: rgba(223, 76, 131, 0.7)!important; }
+.bg-v8-dribbble, .bg-v8-dribbble--hover:hover { background: rgba(223, 76, 131, 0.8)!important; }
+.bg-v9-dribbble, .bg-v9-dribbble--hover:hover { background: rgba(223, 76, 131, 0.9)!important; }
+.bg-dribbble, .bg-dribbble--hover:hover { background: rgba(223, 76, 131, 1); }
+/* Facebook */ 
+.text-v1-facebook, .text-v1-facebook--hover:hover { color: rgba(59, 89, 152, 0.1)!important; }
+.text-v2-facebook, .text-v2-facebook--hover:hover { color: rgba(59, 89, 152, 0.2)!important; }
+.text-v3-facebook, .text-v3-facebook--hover:hover { color: rgba(59, 89, 152, 0.3)!important; }
+.text-v4-facebook, .text-v4-facebook--hover:hover { color: rgba(59, 89, 152, 0.4)!important; }
+.text-v5-facebook, .text-v5-facebook--hover:hover { color: rgba(59, 89, 152, 0.5)!important; }
+.text-v6-facebook, .text-v6-facebook--hover:hover { color: rgba(59, 89, 152, 0.6)!important; }
+.text-v7-facebook, .text-v7-facebook--hover:hover { color: rgba(59, 89, 152, 0.7)!important; }
+.text-v8-facebook, .text-v8-facebook--hover:hover { color: rgba(59, 89, 152, 0.8)!important; }
+.text-v9-facebook, .text-v9-facebook--hover:hover { color: rgba(59, 89, 152, 0.9)!important; }
+.text-facebook, .text-facebook--hover:hover { color: rgba(59, 89, 152, 1); }
+/* Pinterest */ 
+.text-v1-pinterest, .text-v1-pinterest--hover:hover { color: rgba(187, 8, 29, 0.1)!important; }
+.text-v2-pinterest, .text-v2-pinterest--hover:hover { color: rgba(187, 8, 29, 0.2)!important; }
+.text-v3-pinterest, .text-v3-pinterest--hover:hover { color: rgba(187, 8, 29, 0.3)!important; }
+.text-v4-pinterest, .text-v4-pinterest--hover:hover { color: rgba(187, 8, 29, 0.4)!important; }
+.text-v5-pinterest, .text-v5-pinterest--hover:hover { color: rgba(187, 8, 29, 0.5)!important; }
+.text-v6-pinterest, .text-v6-pinterest--hover:hover { color: rgba(187, 8, 29, 0.6)!important; }
+.text-v7-pinterest, .text-v7-pinterest--hover:hover { color: rgba(187, 8, 29, 0.7)!important; }
+.text-v8-pinterest, .text-v8-pinterest--hover:hover { color: rgba(187, 8, 29, 0.8)!important; }
+.text-v9-pinterest, .text-v9-pinterest--hover:hover { color: rgba(187, 8, 29, 0.9)!important; }
+.text-pinterest, .text-pinterest--hover:hover { color: rgba(187, 8, 29, 1); }
+/* Linkedin */ 
+.text-v1-linkedin, .text-v1-linkedin--hover:hover { color: rgba(0, 119, 181, 0.1)!important; }
+.text-v2-linkedin, .text-v2-linkedin--hover:hover { color: rgba(0, 119, 181, 0.2)!important; }
+.text-v3-linkedin, .text-v3-linkedin--hover:hover { color: rgba(0, 119, 181, 0.3)!important; }
+.text-v4-linkedin, .text-v4-linkedin--hover:hover { color: rgba(0, 119, 181, 0.4)!important; }
+.text-v5-linkedin, .text-v5-linkedin--hover:hover { color: rgba(0, 119, 181, 0.5)!important; }
+.text-v6-linkedin, .text-v6-linkedin--hover:hover { color: rgba(0, 119, 181, 0.6)!important; }
+.text-v7-linkedin, .text-v7-linkedin--hover:hover { color: rgba(0, 119, 181, 0.7)!important; }
+.text-v8-linkedin, .text-v8-linkedin--hover:hover { color: rgba(0, 119, 181, 0.8)!important; }
+.text-v9-linkedin, .text-v9-linkedin--hover:hover { color: rgba(0, 119, 181, 0.9)!important; }
+.text-linkedin, .text-linkedin--hover:hover { color: rgba(0, 119, 181, 1); }
+/* Youtube */ 
+.text-v1-youtube, .text-v1-youtube--hover:hover { color: rgba(255, 0, 0, 0.1)!important; }
+.text-v2-youtube, .text-v2-youtube--hover:hover { color: rgba(255, 0, 0, 0.2)!important; }
+.text-v3-youtube, .text-v3-youtube--hover:hover { color: rgba(255, 0, 0, 0.3)!important; }
+.text-v4-youtube, .text-v4-youtube--hover:hover { color: rgba(255, 0, 0, 0.4)!important; }
+.text-v5-youtube, .text-v5-youtube--hover:hover { color: rgba(255, 0, 0, 0.5)!important; }
+.text-v6-youtube, .text-v6-youtube--hover:hover { color: rgba(255, 0, 0, 0.6)!important; }
+.text-v7-youtube, .text-v7-youtube--hover:hover { color: rgba(255, 0, 0, 0.7)!important; }
+.text-v8-youtube, .text-v8-youtube--hover:hover { color: rgba(255, 0, 0, 0.8)!important; }
+.text-v9-youtube, .text-v9-youtube--hover:hover { color: rgba(255, 0, 0, 0.9)!important; }
+.text-youtube, .text-youtube--hover:hover { color: rgba(255, 0, 0, 1); }
+/* Twitter */ 
+.text-v1-twitter, .text-v1-twitter--hover:hover { color: rgba(0, 172, 237, 0.1)!important; }
+.text-v2-twitter, .text-v2-twitter--hover:hover { color: rgba(0, 172, 237, 0.2)!important; }
+.text-v3-twitter, .text-v3-twitter--hover:hover { color: rgba(0, 172, 237, 0.3)!important; }
+.text-v4-twitter, .text-v4-twitter--hover:hover { color: rgba(0, 172, 237, 0.4)!important; }
+.text-v5-twitter, .text-v5-twitter--hover:hover { color: rgba(0, 172, 237, 0.5)!important; }
+.text-v6-twitter, .text-v6-twitter--hover:hover { color: rgba(0, 172, 237, 0.6)!important; }
+.text-v7-twitter, .text-v7-twitter--hover:hover { color: rgba(0, 172, 237, 0.7)!important; }
+.text-v8-twitter, .text-v8-twitter--hover:hover { color: rgba(0, 172, 237, 0.8)!important; }
+.text-v9-twitter, .text-v9-twitter--hover:hover { color: rgba(0, 172, 237, 0.9)!important; }
+.text-twitter, .text-twitter--hover:hover { color: rgba(0, 172, 237, 1); }
+/* Dribbble */ 
+.text-v1-dribbble, .text-v1-dribbble--hover:hover { color: rgba(223, 76, 131, 0.1)!important; }
+.text-v2-dribbble, .text-v2-dribbble--hover:hover { color: rgba(223, 76, 131, 0.2)!important; }
+.text-v3-dribbble, .text-v3-dribbble--hover:hover { color: rgba(223, 76, 131, 0.3)!important; }
+.text-v4-dribbble, .text-v4-dribbble--hover:hover { color: rgba(223, 76, 131, 0.4)!important; }
+.text-v5-dribbble, .text-v5-dribbble--hover:hover { color: rgba(223, 76, 131, 0.5)!important; }
+.text-v6-dribbble, .text-v6-dribbble--hover:hover { color: rgba(223, 76, 131, 0.6)!important; }
+.text-v7-dribbble, .text-v7-dribbble--hover:hover { color: rgba(223, 76, 131, 0.7)!important; }
+.text-v8-dribbble, .text-v8-dribbble--hover:hover { color: rgba(223, 76, 131, 0.8)!important; }
+.text-v9-dribbble, .text-v9-dribbble--hover:hover { color: rgba(223, 76, 131, 0.9)!important; }
+.text-dribbble, .text-dribbble--hover:hover { color: rgba(223, 76, 131, 1); }

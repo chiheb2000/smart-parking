@@ -1,0 +1,25 @@
+/*.main-menu ul li > a,
+.main-menu-overlay ul li a,
+.main-menu .mega-menu-heading,
+.main-menu .mega-menu-desc
+{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.main-menu ul li > a {
+	font-size: 13px !important;
+	text-transform: capitalize !important;
+	color: #212121;
+	padding: 14px 15px;
+}
+.main-menu .mega-menu-heading {
+	font-size: 15px;
+	color: #212121;
+	margin-bottom: 12px;
+	text-transform: capitalize !important;
+}
+.main-menu .mega-menu-desc {
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1.42857143;
+	color: #818181;
+}*/

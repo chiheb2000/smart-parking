@@ -1,0 +1,59 @@
+/* RIBBON */
+
+/* common */
+.ribbon {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: absolute;
+}
+.ribbon span {
+	position: absolute;
+	width: 120px;
+	padding: 2px 0;
+	text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+	top: 0;
+	left: 0;
+}
+.ribbon-top-left span {
+	left: -28px;
+	top: 17px;
+	transform: rotate(-45deg);
+}
+
+/* top right*/
+.ribbon-top-right {
+	top: 0;
+	right: 0;
+}
+.ribbon-top-right span {
+	left: 9px;
+	top: 18px;
+	transform: rotate(45deg);
+}
+
+/* bottom left*/
+.ribbon-bottom-left {
+	bottom: 0;
+	left: 0;
+}
+.ribbon-bottom-left span {
+	right: 9px;
+	bottom: 17px;
+	transform: rotate(225deg);
+}
+
+/* bottom right*/
+.ribbon-bottom-right {
+	bottom: 0;
+	right: 0;
+}
+.ribbon-bottom-right span {
+	left: 8px;
+	bottom: 18px;
+	transform: rotate(-225deg);
+}

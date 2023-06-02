@@ -1,0 +1,373 @@
+/* Owl Carousel */
+.owl-carousel .owl-item img {
+	transform-style: unset;
+}
+
+.owl-carousel .thumbnail {
+	margin-right: 1px;
+}
+
+.owl-carousel .item-video {
+	height: 300px;
+}
+
+.owl-carousel .owl-nav {
+	top: 50%;
+	position: absolute;
+	margin-top: -20px;
+	width: 100%;
+}
+
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+	left: -5px;
+}
+
+.owl-carousel .owl-nav .owl-prev:before {
+	/*font-family: "Font Awesome 5 Free";*/
+	font-family: 'simple-line-icons';
+	font-style: normal;
+	font-weight: 900;
+	/*content: "\f104";*/
+	content: "\e605";
+	position: relative;
+	left: -1px;
+	top: 0px;
+}
+.owl-carousel.owl-nav-bordered .owl-nav .owl-prev:before {
+	top: -1px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+	right: -5px;
+}
+
+.owl-carousel .owl-nav .owl-next:before {
+	/*font-family: "Font Awesome 5 Free";*/
+	font-family: 'simple-line-icons';
+	font-style: normal;
+	font-weight: 900;
+	/*content: "\f105";*/
+	content: "\e606";
+	position: relative;
+	left: 1px;
+	top: 0px;
+}
+.owl-carousel.owl-nav-bordered .owl-nav .owl-next:before {
+	top: -1px;
+}
+
+.owl-carousel.stage-margin .owl-stage-outer {
+	margin-left: 40px !important;
+	margin-right: 40px !important;
+}
+
+.owl-carousel.stage-margin .owl-stage-outer .owl-stage {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.owl-carousel.show-nav-hover .owl-nav {
+	opacity: 0;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.owl-carousel.show-nav-hover .owl-nav .owl-prev {
+	left: -20px;
+}
+
+.owl-carousel.show-nav-hover .owl-nav .owl-next {
+	right: -20px;
+}
+
+.owl-carousel.show-nav-hover:hover .owl-nav {
+	opacity: 1;
+}
+
+.owl-carousel.show-nav-title .owl-nav {
+    top: 0;
+    right: 0;
+    margin-top: -50px !important;
+    width: auto;
+}
+
+/*.owl-carousel.show-nav-title .owl-nav [class*="owl-"], .owl-carousel.show-nav-title .owl-nav [class*="owl-"]:hover, .owl-carousel.show-nav-title .owl-nav [class*="owl-"]:active {
+	font-size: 18px;
+	background: transparent !important;
+	width: 18px;
+	font-size: 18px;
+}*/
+
+.owl-carousel.show-nav-title .owl-nav .owl-prev {
+	left: -70px;
+}
+
+.owl-carousel.rounded-nav .owl-nav [class*="owl-"], .owl-carousel.rounded-nav .owl-nav [class*="owl-"]:hover {
+	padding: 3px 7px;
+	border-radius: 50%;
+	background: transparent;
+	border: 1px solid #999 !important;
+	color: #999;
+}
+
+.owl-carousel.nav-bottom .owl-nav {
+	position: static;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+.owl-carousel.nav-bottom .owl-nav .owl-prev, .owl-carousel.nav-bottom .owl-nav .owl-next {
+	position: static;
+}
+
+.owl-carousel.nav-inside .owl-nav, .owl-carousel.nav-inside .owl-dots {
+	bottom: 2px;
+	margin-top: 10px;
+	position: absolute;
+	right: 6px;
+}
+
+.owl-carousel.full-width .owl-nav [class*="owl-"], .owl-carousel.full-width .owl-nav [class*="owl-"]:hover, .owl-carousel.big-nav .owl-nav [class*="owl-"], .owl-carousel.big-nav .owl-nav [class*="owl-"]:hover {
+	height: auto;
+}
+
+/* Spaced */
+.owl-carousel-spaced {
+	margin-left: -5px;
+}
+
+.owl-carousel-spaced .owl-item > div {
+	margin: 5px;
+}
+
+/* Responsive */
+@media (max-width: 479px) {
+	.owl-carousel-spaced {
+		margin-left: 0;
+	}
+}
+/* Carousel Areas */
+/*.carousel-areas {
+	background: transparent url(../img/patterns/stripes.png) repeat 0 0;
+	margin-bottom: -10px;
+	padding: 10px 10px 0 10px;
+	border-radius: 6px 6px 0 0;
+}*/
+
+.carousel-areas .owl-carousel {
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-areas .owl-carousel .owl-nav .owl-prev {
+	left: -55px;
+}
+
+.carousel-areas .owl-carousel .owl-nav .owl-next {
+	right: -55px;
+}
+
+.carousel-areas .owl-carousel:first-child img {
+	border-radius: 6px 6px 0 0;
+}
+
+/* Dots */
+.owl-dots {
+    margin-top: 10px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    border-style: solid;
+    border-width: 2px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: none !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+	border-style: solid;
+	border-width: 2px;
+}
+
+/* NAV */
+.owl-theme .owl-nav {
+    margin-top: -20px !important;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    font-size: 24px!important;
+    padding: 0!important;
+    background: none!important;
+    line-height: 24px;
+    border-radius: 0 !important;
+}
+.owl-carousel.full-width .owl-nav, .owl-carousel.big-nav .owl-nav {
+	margin-top: -17px !important;
+}
+.owl-carousel.show-nav-hover .owl-nav .owl-prev {
+    left: 0px;
+}
+.owl-carousel.show-nav-hover .owl-nav .owl-next {
+    right: 0px;
+}
+
+/* OWL-ROUNDED */
+.owl-theme.owl-nav-circle .owl-nav [class*=owl-] {
+	border-radius: 100px !important;
+}
+
+/* OWL-BG */
+.owl-theme.owl-nav-bg .owl-nav [class*=owl-] {
+    font-size: 17px !important;
+    line-height: 29px;
+}
+.owl-theme.owl-nav-bordered .owl-nav [class*=owl-] {
+    font-size: 17px !important;
+    line-height: 29px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.owl-theme .owl-dots {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -32px;
+}
+
+/* DOTS INSIDE */
+.owl-dots-inside-top-left .owl-dots {
+    top: 0;
+    bottom: auto;
+    width: auto;
+    margin: 10px;
+}
+.owl-dots-inside-top-right .owl-dots {
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    width: auto;
+    margin: 10px;
+}
+.owl-dots-inside-bottom-left .owl-dots {
+    bottom: 0;
+    width: auto;
+    margin: 10px;
+}
+.owl-dots-inside-bottom-right .owl-dots {
+	right: 0;
+	left: auto;
+    bottom: 0;
+    width: auto;
+    margin: 10px;
+}
+
+/* OWL NAV LG */
+.owl-theme.owl-nav-lg .owl-nav {
+    margin-top: -43px !important;
+}
+.owl-theme.owl-nav-lg .owl-nav [class*=owl-] {
+    font-size: 48px!important;
+    line-height: 29px;
+}
+.owl-carousel.owl-nav-lg .owl-nav .owl-prev, .owl-carousel.owl-nav-lg .owl-nav .owl-next {
+    width: 75px;
+    height: 75px;
+}
+.owl-carousel.owl-nav-lg .owl-nav .owl-prev:before {
+    top: 22px;
+}
+.owl-carousel.owl-nav-lg .owl-nav .owl-next:before {
+    top: 22px;
+}
+/* OWL DOTS LG */
+.owl-theme.owl-dots-lg .owl-dots .owl-dot span {
+    width: 17px;
+    height: 17px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+	.carousel-areas .owl-carousel .owl-nav {
+		display: none;
+	}
+}
+
+
+
+/* COLORS */
+.owl-theme .owl-nav [class*=owl-] {
+    color: rgba(0, 0, 0, 1)!important;
+}
+.owl-theme .owl-dots .owl-dot span {
+    border-color: rgba(0, 0, 0, 1);
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: rgba(0, 0, 0, 1) !important;
+}
+/* OWL-BG */
+.owl-theme.owl-nav-bg .owl-nav [class*=owl-] {
+    background: rgba(0, 0, 0, 1) !important;
+    color: #fff !important;
+}
+/* OWL-BG */
+.owl-theme.owl-nav-bordered .owl-nav [class*=owl-] {
+	border-color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+/*.owl-carousel .owl-dots .owl-dot.active span,
+.owl-carousel .owl-dots .owl-dot:hover span {
+	background-color: #0074ad;
+}
+
+.owl-carousel.show-nav-title .owl-nav [class*="owl-"] {
+	color: #0088cc;
+}
+
+.owl-carousel .owl-nav [class*="owl-"] {
+	color: #ffffff;
+	background-color: #0088cc;
+	border-color: #0088cc #0088cc #006699;
+}
+
+.owl-carousel .owl-nav [class*="owl-"]:hover {
+	border-color: #0099e6 #0099e6 #0077b3;
+	background-color: #0099e6;
+}
+
+.owl-carousel .owl-nav [class*="owl-"]:active,
+.owl-carousel .owl-nav [class*="owl-"]:focus,
+.owl-carousel .owl-nav [class*="owl-"]:active:hover,
+.owl-carousel .owl-nav [class*="owl-"]:active:focus {
+	border-color: #0077b3 #0077b3 #0077b3;
+	background-color: #0077b3;
+}
+
+.owl-carousel .owl-nav [class*="owl-"].dropdown-toggle {
+	border-left-color: #0077b3;
+}
+
+.owl-carousel .owl-nav [class*="owl-"][disabled],
+.owl-carousel .owl-nav [class*="owl-"][disabled]:hover,
+.owl-carousel .owl-nav [class*="owl-"][disabled]:active,
+.owl-carousel .owl-nav [class*="owl-"][disabled]:focus {
+	border-color: #33bbff;
+	background-color: #33bbff;
+}

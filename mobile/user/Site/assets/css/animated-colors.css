@@ -1,0 +1,17 @@
+/* BORDER */
+.bc-danger-warning {
+    border-color: rgba(220, 53, 69, 0.1);
+    animation: bordercolor 5s;
+    -moz-animation: bordercolor 5s infinite;
+    -webkit-animation: bordercolor 5s infinite;
+}
+@-moz-keyframes bordercolor {
+    0% 		{ border-color: rgba(220, 53, 69, 1); }
+    50% 	{ border-color: rgba(255, 193, 7, 1); }
+    100% 	{ border-color: rgba(220, 53, 69, 1); }
+}
+@-webkit-keyframes bordercolor {
+    0% 		{ border-color: rgba(220, 53, 69, 1); }
+    50% 	{ border-color: rgba(255, 193, 7, 1); }
+    100% 	{ border-color: rgba(220, 53, 69, 1); }
+}

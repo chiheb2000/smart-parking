@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+
+    <link rel="shortcut icon" href="assets/images/logo/nCbdXaxqvpcanRB.png">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/menu/src/main.menu.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/utilities.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/colors-gh.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/colors-g.css">
+
+    <!-- CAROUSEL -->
+    <link rel="stylesheet" href="assets/vendors/owl.carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl.carousel/owl.theme.default.min.css">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/animate/animate.css">
+
+    <!-- ANIMATED HEADLINES -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/animated-headline/css/style.css">
+
+    <!-- FANCY BOX -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fancybox/jquery.fancybox.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <style>
+        .sty {
+            left: 18%;
+            top: 35%;
+            height: 50%;
+            width: 40%;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body onload="getLocation()">
+
+    <div class="main-header header-shadow cherry-header">
+        <div class="container">
+
+            <div class="main-header-container">
+
+                <div class="logo" data-mobile-logo="assets/images/logo/parking.jpg" data-sticky-logo="assets/images/logo/parking.jpg">
+                    <a href="index.html"><img src="assets/images/logo/parking.jpg" alt="logo" /></a>
+                </div>
+                <!-- /LOGO -->
+
+                <div class="burger-menu">
+                    <div class="line-menu line-half first-line"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu line-half last-line"></div>
+                </div>
+                <!-- /BURGER MENU -->
+
+                <nav class="main-menu menu-caret menu-hover-2 submenu-top-border submenu-scale">
+                    <ul id="navigation">
+
+                    </ul>
+                </nav>
+                <!-- NAVIGATION MENU -->
+
+            </div>
+            <!-- /HEADER CONTAINER -->
+
+        </div>
+        <!-- /CONTAINER -->
+    </div>
+    <!-- /HEADER -->
+    <script>
+        if (!localStorage.getItem("id")) {
+            document.getElementById("navigation").innerHTML = `
+            <li ><a href="index.html">Home</a></li>
+                        <li><a href="parkings.html">Parkings</a>
+
+                        </li>
+
+                        <li><a href="about-us.html">About Us</a>
+                        </li>
+                        <li><a href="notification.html">notification</a></li>
+                        <li class="current-menu"><a href="contact-us.html">Avis</a></li>
+                        <li><a href="signin.html" ">connexion</a></li>
+                        `;
+        } else {
+            var c = localStorage.getItem("id");
+
+            console.log(c);
+
+            // Post a user
+            var url3 = "http://172.20.10.4:3000/users/" + c;
+            var xhr3 = new XMLHttpRequest();
+            xhr3.open("GET", url3, true);
+            xhr3.onload = function() {
+                var admins = JSON.parse(xhr3.responseText);
+                if (xhr3.readyState == 4 && xhr3.status == "200") {
+                    document.getElementById("res").innerHTML = admins.firstname;
+                    document.getElementById("res").href = "profile.html?id=" + c;
+                } else {
+
+                    console.log("error");
+                }
+            }
+            xhr3.send(null);
+            document.getElementById("navigation").innerHTML = `
+            <li > <a href="profile.html" id="res" class="far fa-user-circle" style=" color: green;"></a>  </li>
+            <li ><a href="index.html">Home</a></li>
+                        <li><a href="parkings.html">Parkings</a>
+
+                        </li>
+
+                        <li><a href="about-us.html">About Us</a>
+                        </li>
+                        <li><a href="notification.html">notification</a></li>
+                        <li class="current-menu"><a href="contact-us.html">Avis</a></li>
+                                    <li><a href="index.html" onclick="logout()">Se déconnecter</a></li>
+                                `;
+        }
+
+        function logout() {
+
+            localStorage.removeItem("id");
+            location.replace("index.html");
+
+        }
+    </script>
+
+    <!-- BREADCRUMB -->
+    <section class="bg-cherry pt-s3 pb-s3 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-lg-flex text-center">
+                        <div class="align-self-center mb-0--lg mb-s1--md mb-s1--sm mb-s1--xs">
+                            <h3 class="text-bold-400 text-size-s2 m-0 text-white">Avis</h3>
+                        </div>
+                        <div class="ml-auto align-self-center">
+                            <ol class="breadcrumb d-flex justify-content-center m-0 bg-none text-size-s1 p-0">
+                                <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Avis</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW -->
+        </div>
+        <!-- /CONTAINER -->
+    </section>
+    <!-- /SECTION -->
+    <!-- /BREADCRUMB -->
+
+    <section class="bg-v5-light pt-s2 pb-s2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mt-s2 mb-s2 box-shadow-parent--hover">
+                        <div class="d-flex">
+                            <div class="mr-s2">
+                                <div class="text-size-s2 rounded-circle bg-cherry text-white text-center h--70 w--70 d-flex justify-content-center align-items-center box-shadow-v2-s3 box-shadow-v3-s3-child--hover">
+                                    <i class="icon-phone"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="text-size-18 text-bold-600">Appelez-nous</h2>
+                                <p class="m-0">+(216) 24-611-837</p>
+                                <p class="m-0">+(216) 20-701-164</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mt-s2 mb-s2 box-shadow-parent--hover">
+                        <div class="d-flex">
+                            <div class="mr-s2">
+                                <div class="text-size-s2 rounded-circle bg-cherry text-white text-center h--70 w--70 d-flex justify-content-center align-items-center box-shadow-v2-s3 box-shadow-v3-s3-child--hover">
+                                    <i class="icon-envelope-open"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="text-size-18 text-bold-600">Envoyez-nous un email</h2>
+                                <p class="m-0">admin@email.com</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mt-s2 mb-s2 box-shadow-parent--hover">
+                        <div class="d-flex">
+                            <div class="mr-s2">
+                                <div class="text-size-s2 rounded-circle bg-cherry text-white text-center h--70 w--70 d-flex justify-content-center align-items-center box-shadow-v2-s3 box-shadow-v3-s3-child--hover">
+                                    <i class="icon-calendar"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="text-size-18 text-bold-600">journée de travail</h2>
+                                <p class="m-0">7/7</p>
+                                <p class="m-0">24/24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /ROW -->
+        </div>
+        <!-- /CONTAINER -->
+    </section>
+    <!-- /SECTION -->
+
+    <section class="bg-white pt-s5 pb-s5">
+        <div class="container">
+            <div class="mb-s4">
+
+                <h2 class="text-bold-700 text-dark text-capitalize">Votre avis nous intéresse </h2>
+                <hr class="w--60 bs-solid bc-cherry bw-s5 bt-0 bl-0 br-0 mt-s2 ml-0">
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+
+
+                    <form onsubmit="return false">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input id="name" type="text" class="form-control bg-light text-size-12 pt-16 pb-16 pl-20 pr-20 text-bold-600 rounded-0 bc-v1-dark" placeholder="Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input id="email" type="email" class="form-control bg-light text-size-12 pt-16 pb-16 pl-20 pr-20 text-bold-600 rounded-0 bc-v1-dark" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="msg" class="form-control bg-light text-size-12 pt-16 pb-16 pl-20 pr-20 text-bold-600 rounded-0 bc-v1-dark" rows="5" placeholder="Votre Avis"></textarea>
+                        </div>
+                        <button type="submit" onclick="ajouter()" class="btn bg-cherry text-white text-shadow-s1 text-uppercase text-bold-600 text-size-s1 rounded-s5 pt-12 pb-12 pl-s3 pr-s3 mt-s1 mb-s1 btn-block">Envoyez-nous </button>
+                    </form>
+                </div>
+                <script>
+                    function ajouter() {
+                        var url = "http://172.20.10.4:3000/opinions";
+                        var data = {};
+                        data.name = document.getElementById("name").value;
+                        data.email = document.getElementById("email").value;
+                        data.msg = document.getElementById("msg").value;
+
+                        var json = JSON.stringify(data);
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", url, true);
+                        xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+                        xhr.onload = function() {
+                            var opinions = JSON.parse(xhr.responseText);
+                            if (xhr.readyState == 4 && xhr.status == "200") {
+                                console.table(opinions);
+                                alert("successfully sent!");
+                                location.replace("index.html");
+                            } else {
+                                alert(opinions.message);
+                                console.table(opinions);
+                            }
+                        }
+                        xhr.send(json);
+                    }
+                </script>
+                <div class="col-lg-6 col-md-6">
+                    <div class="bs-solid bc-v1-dark bw-s1 p-s1">
+                        <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
+                        <div id="map" class="min-h--300"></div>
+                        <p hidden id="x"></p>
+                        <p hidden id="y"></p>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- /ROW -->
+        </div>
+        <!-- /CONTAINER -->
+    </section>
+    <!-- /SECTION -->
+
+    <!--
+    #################################
+        - Begin: FOOTER -
+    #################################
+    -->
+
+
+    <footer class="bg-dark pt-s1 pb-s1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mt-s2 mb-s2 text-white">
+                        <p class="m-0 text-white">&copy; Copyright 2022 by <abbr title="Parking"><a href="#" class="text-white">Parking</a></abbr>. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mt-s2 mb-s2 text-white text-right">
+                        <a class="text-white" href="#">Privacy Policy</a> | <a class="text-white" href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /ROW -->
+        </div>
+        <!-- /CONTAINER -->
+    </footer>
+    <!-- End: FOOTER -
+    ################################################################## -->
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendors/appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/common/common.min.js"></script>
+
+    <!-- FANCY-BOX -->
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- MENU -->
+    <script src="assets/vendors/menu/src/main.menu.js"></script>
+
+    <!-- CAROUSEL -->
+    <script src="assets/vendors/owl.carousel/owl.carousel.min.js"></script>
+
+    <!-- ANIMATED-HEADLINES -->
+    <script src="assets/vendors/animated-headline/js/animated-headline.js"></script>
+
+
+
+    <!-- THEME-CUSTOM -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- THEME-INITIALIZATION-FILES -->
+    <script src="assets/js/theme.init.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        var x, y;
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+        }
+
+        function showPosition(position) {
+
+            document.getElementById("x").innerHTML = position.coords.latitude;
+            document.getElementById("y").innerHTML = position.coords.longitude;
+            myGreeting();
+
+        }
+
+        function myGreeting() {
+            var x = document.getElementById("x").innerHTML;
+            var y = document.getElementById("y").innerHTML;
+            var locations = [
+                [
+                    '<b>Name 1</b><br>Address Line 1<br>Bismarck, ND 58501<br>Phone: 701-555-1234<br><a href="#" >Link<a> of some sort.',
+                    x,
+                    y,
+                    4,
+                ],
+
+                /*
+                 * Next point on map
+                 *   -Notice how the last number within the brackets incrementally increases from the prior marker
+                 *   -Use http://itouchmap.com/latlong.html to get Latitude and Longitude of a specific address
+                 *   -Follow the model below:
+                 *      ['<b>Name 3</b><br>Address Line 1<br>City, ST Zipcode<br>Phone: ###-###-####<br><a href="#" target="_blank">Link<a> of some sort.', ##.####, -##.####, #]
+                 */
+            ];
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 7,
+                /* Zoom level of your map */
+                center: new google.maps.LatLng(35.47021625, 10.47173475),
+                /* coordinates for the center of your map */
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+            });
+
+            var infowindow = new google.maps.InfoWindow();
+
+            var marker, i;
+
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                });
+
+                google.maps.event.addListener(
+                    marker,
+                    "click",
+                    (function(marker, i) {
+                        return function() {
+                            infowindow.setContent(locations[i][0]);
+                            infowindow.open(map, marker);
+                        };
+                    })(marker, i)
+                );
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

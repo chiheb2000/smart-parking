@@ -1,0 +1,580 @@
+/* ANIMATE */
+
+.animate-bounce-child--hover,
+.animate-flash-child--hover,
+.animate-pulse-child--hover,
+.animate-rubberBand-child--hover,
+.animate-shake-child--hover,
+.animate-headShake-child--hover,
+.animate-swing-child--hover,
+.animate-tada-child--hover,
+.animate-wobble-child--hover,
+.animate-jello-child--hover,
+.animate-bounceIn-child--hover,	
+.animate-bounceInDown-child--hover,
+.animate-bounceInLeft-child--hover,	
+.animate-bounceInRight-child--hover,
+.animate-bounceInUp-child--hover,
+/*.animate-bounceOut-child--hover,
+.animate-bounceOutDown-child--hover,
+.animate-bounceOutLeft-child--hover,
+.animate-bounceOutRight-child--hover,
+.animate-bounceOutUp-child--hover,*/
+.animate-fadeIn-child--hover,
+.animate-fadeInDown-child--hover,
+.animate-fadeInDownBig-child--hover,
+.animate-fadeInLeft-child--hover,
+.animate-fadeInLeftBig-child--hover,
+.animate-fadeInRight-child--hover,
+.animate-fadeInRightBig-child--hover,
+.animate-fadeInUp-child--hover,
+.animate-fadeInUpBig-child--hover,
+/*.animate-fadeOut-child--hover,
+.animate-fadeOutDown-child--hover,
+.animate-fadeOutDownBig-child--hover,
+.animate-fadeOutLeft-child--hover,
+.animate-fadeOutLeftBig-child--hover,
+.animate-fadeOutRight-child--hover,
+.animate-fadeOutRightBig-child--hover,
+.animate-fadeOutUp-child--hover,
+.animate-fadeOutUpBig-child--hover,*/
+.animate-flipInX-child--hover,
+.animate-flipInY-child--hover,
+/*.animate-flipOutX-child--hover,
+.animate-flipOutY-child--hover,*/
+.animate-lightSpeedIn-child--hover,
+/*.animate-lightSpeedOut-child--hover,*/
+.animate-rotateIn-child--hover,
+.animate-rotateInDownLeft-child--hover,
+.animate-rotateInDownRight-child--hover,
+.animate-rotateInUpLeft-child--hover,
+.animate-rotateInUpRight-child--hover,
+/*.animate-rotateOut-child--hover,
+.animate-rotateOutDownLeft-child--hover,
+.animate-rotateOutDownRight-child--hover,
+.animate-rotateOutUpLeft-child--hover,
+.animate-rotateOutUpRight-child--hover,*/
+.animate-hinge-child--hover,
+.animate-jackInTheBox-child--hover,
+.animate-rollIn-child--hover,
+/*.animate-rollOut-child--hover,*/
+.animate-zoomIn-child--hover,
+.animate-zoomInDown-child--hover,
+.animate-zoomInLeft-child--hover,
+.animate-zoomInRight-child--hover,
+.animate-zoomInUp-child--hover,
+/*.animate-zoomOut-child--hover,
+.animate-zoomOutDown-child--hover,
+.animate-zoomOutLeft-child--hover,
+.animate-zoomOutRight-child--hover,
+.animate-zoomOutUp-child--hover,*/
+.animate-slideInDown-child--hover,
+.animate-slideInLeft-child--hover,
+.animate-slideInRight-child--hover,
+.animate-slideInUp-child--hover/*,
+.animate-slideOutDown-child--hover,
+.animate-slideOutLeft-child--hover,
+.animate-slideOutRight-child--hover,
+.animate-slideOutUp-child--hover*/ {
+	opacity: 0;
+}
+
+.animate-parent--hover:hover .animate-bounce-child--hover,
+.animate-parent--hover:hover .animate-flash-child--hover,
+.animate-parent--hover:hover .animate-pulse-child--hover,
+.animate-parent--hover:hover .animate-rubberBand-child--hover,
+.animate-parent--hover:hover .animate-shake-child--hover,
+.animate-parent--hover:hover .animate-headShake-child--hover,
+.animate-parent--hover:hover .animate-swing-child--hover,
+.animate-parent--hover:hover .animate-tada-child--hover,
+.animate-parent--hover:hover .animate-wobble-child--hover,
+.animate-parent--hover:hover .animate-jello-child--hover,
+.animate-parent--hover:hover .animate-bounceIn-child--hover,	
+.animate-parent--hover:hover .animate-bounceInDown-child--hover,
+.animate-parent--hover:hover .animate-bounceInLeft-child--hover,	
+.animate-parent--hover:hover .animate-bounceInRight-child--hover,
+.animate-parent--hover:hover .animate-bounceInUp-child--hover,
+.animate-parent--hover:hover .animate-bounceOut-child--hover,
+.animate-parent--hover:hover .animate-bounceOutDown-child--hover,
+.animate-parent--hover:hover .animate-bounceOutLeft-child--hover,
+.animate-parent--hover:hover .animate-bounceOutRight-child--hover,
+.animate-parent--hover:hover .animate-bounceOutUp-child--hover,
+.animate-parent--hover:hover .animate-fadeIn-child--hover,
+.animate-parent--hover:hover .animate-fadeInDown-child--hover,
+.animate-parent--hover:hover .animate-fadeInDownBig-child--hover,
+.animate-parent--hover:hover .animate-fadeInLeft-child--hover,
+.animate-parent--hover:hover .animate-fadeInLeftBig-child--hover,
+.animate-parent--hover:hover .animate-fadeInRight-child--hover,
+.animate-parent--hover:hover .animate-fadeInRightBig-child--hover,
+.animate-parent--hover:hover .animate-fadeInUp-child--hover,
+.animate-parent--hover:hover .animate-fadeInUpBig-child--hover,
+.animate-parent--hover:hover .animate-fadeOut-child--hover,
+.animate-parent--hover:hover .animate-fadeOutDown-child--hover,
+.animate-parent--hover:hover .animate-fadeOutDownBig-child--hover,
+.animate-parent--hover:hover .animate-fadeOutLeft-child--hover,
+.animate-parent--hover:hover .animate-fadeOutLeftBig-child--hover,
+.animate-parent--hover:hover .animate-fadeOutRight-child--hover,
+.animate-parent--hover:hover .animate-fadeOutRightBig-child--hover,
+.animate-parent--hover:hover .animate-fadeOutUp-child--hover,
+.animate-parent--hover:hover .animate-fadeOutUpBig-child--hover,
+.animate-parent--hover:hover .animate-flipInX-child--hover,
+.animate-parent--hover:hover .animate-flipInY-child--hover,
+.animate-parent--hover:hover .animate-flipOutX-child--hover,
+.animate-parent--hover:hover .animate-flipOutY-child--hover,
+.animate-parent--hover:hover .animate-lightSpeedIn-child--hover,
+.animate-parent--hover:hover .animate-lightSpeedOut-child--hover,
+.animate-parent--hover:hover .animate-rotateIn-child--hover,
+.animate-parent--hover:hover .animate-rotateInDownLeft-child--hover,
+.animate-parent--hover:hover .animate-rotateInDownRight-child--hover,
+.animate-parent--hover:hover .animate-rotateInUpLeft-child--hover,
+.animate-parent--hover:hover .animate-rotateInUpRight-child--hover,
+.animate-parent--hover:hover .animate-rotateOut-child--hover,
+.animate-parent--hover:hover .animate-rotateOutDownLeft-child--hover,
+.animate-parent--hover:hover .animate-rotateOutDownRight-child--hover,
+.animate-parent--hover:hover .animate-rotateOutUpLeft-child--hover,
+.animate-parent--hover:hover .animate-rotateOutUpRight-child--hover,
+.animate-parent--hover:hover .animate-hinge-child--hover,
+.animate-parent--hover:hover .animate-jackInTheBox-child--hover,
+.animate-parent--hover:hover .animate-rollIn-child--hover,
+.animate-parent--hover:hover .animate-rollOut-child--hover,
+.animate-parent--hover:hover .animate-zoomIn-child--hover,
+.animate-parent--hover:hover .animate-zoomInDown-child--hover,
+.animate-parent--hover:hover .animate-zoomInLeft-child--hover,
+.animate-parent--hover:hover .animate-zoomInRight-child--hover,
+.animate-parent--hover:hover .animate-zoomInUp-child--hover,
+.animate-parent--hover:hover .animate-zoomOut-child--hover,
+.animate-parent--hover:hover .animate-zoomOutDown-child--hover,
+.animate-parent--hover:hover .animate-zoomOutLeft-child--hover,
+.animate-parent--hover:hover .animate-zoomOutRight-child--hover,
+.animate-parent--hover:hover .animate-zoomOutUp-child--hover,
+.animate-parent--hover:hover .animate-slideInDown-child--hover,
+.animate-parent--hover:hover .animate-slideInLeft-child--hover,
+.animate-parent--hover:hover .animate-slideInRight-child--hover,
+.animate-parent--hover:hover .animate-slideInUp-child--hover,
+.animate-parent--hover:hover .animate-slideOutDown-child--hover,
+.animate-parent--hover:hover .animate-slideOutLeft-child--hover,
+.animate-parent--hover:hover .animate-slideOutRight-child--hover,
+.animate-parent--hover:hover .animate-slideOutUp-child--hover {
+	opacity: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate-parent--hover:hover .animate-bounce-child--hover {
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+
+.animate-parent--hover:hover .animate-flash-child--hover {
+	-webkit-animation-name: flash;
+	animation-name: flash;
+}
+
+.animate-parent--hover:hover .animate-pulse-child--hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.animate-parent--hover:hover .animate-rubberBand-child--hover {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+.animate-parent--hover:hover .animate-shake-child--hover {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+.animate-parent--hover:hover .animate-headShake-child--hover {
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: headShake;
+  animation-name: headShake;
+}
+
+.animate-parent--hover:hover .animate-swing-child--hover {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+}
+
+.animate-parent--hover:hover .animate-tada-child--hover {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+.animate-parent--hover:hover .animate-wobble-child--hover {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+}
+
+.animate-parent--hover:hover .animate-jello-child--hover {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.animate-parent--hover:hover .animate-bounceIn-child--hover {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+.animate-parent--hover:hover .animate-bounceInDown-child--hover {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+.animate-parent--hover:hover .animate-bounceInLeft-child--hover {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+.animate-parent--hover:hover .animate-bounceInRight-child--hover {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+
+.animate-parent--hover:hover .animate-bounceInUp-child--hover {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+}
+
+.animate-parent--hover:hover .animate-bounceOut-child--hover {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceOut;
+  animation-name: bounceOut;
+}
+
+.animate-parent--hover:hover .animate-bounceOutDown-child--hover {
+  -webkit-animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
+}
+
+.animate-parent--hover:hover .animate-bounceOutLeft-child--hover {
+  -webkit-animation-name: bounceOutLeft;
+  animation-name: bounceOutLeft;
+}
+
+.animate-parent--hover:hover .animate-bounceOutRight-child--hover {
+  -webkit-animation-name: bounceOutRight;
+  animation-name: bounceOutRight;
+}
+
+.animate-parent--hover:hover .animate-bounceOutUp-child--hover {
+  -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
+}
+
+.animate-parent--hover:hover .animate-fadeIn-child--hover {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animate-parent--hover:hover .animate-fadeInDown-child--hover {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.animate-parent--hover:hover .animate-fadeInDownBig-child--hover {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
+
+.animate-parent--hover:hover .animate-fadeInLeft-child--hover {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+.animate-parent--hover:hover .animate-fadeInLeftBig-child--hover {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+
+.animate-parent--hover:hover .animate-fadeInRight-child--hover {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.animate-parent--hover:hover .animate-fadeInRightBig-child--hover {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+}
+
+.animate-parent--hover:hover .animate-fadeInUp-child--hover {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.animate-parent--hover:hover .animate-fadeInUpBig-child--hover {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+
+.animate-parent--hover:hover .animate-fadeOut-child--hover {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.animate-parent--hover:hover .animate-fadeOutDown-child--hover {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+
+.animate-parent--hover:hover .animate-fadeOutDownBig-child--hover {
+  -webkit-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig;
+}
+
+.animate-parent--hover:hover .animate-fadeOutLeft-child--hover {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+.animate-parent--hover:hover .animate-fadeOutLeftBig-child--hover {
+  -webkit-animation-name: fadeOutLeftBig;
+  animation-name: fadeOutLeftBig;
+}
+
+.animate-parent--hover:hover .animate-fadeOutRight-child--hover {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+
+.animate-parent--hover:hover .animate-fadeOutRightBig-child--hover {
+  -webkit-animation-name: fadeOutRightBig;
+  animation-name: fadeOutRightBig;
+}
+
+.animate-parent--hover:hover .animate-fadeOutUp-child--hover {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+.animate-parent--hover:hover .animate-fadeOutUpBig-child--hover {
+  -webkit-animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig;
+}
+
+.animate-parent--hover:hover .animate-flip-child--hover {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: flip;
+  animation-name: flip;
+}
+
+.animate-parent--hover:hover .animate-flipInX-child--hover {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+.animate-parent--hover:hover .animate-flipInY-child--hover {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+  animation-name: flipInY;
+}
+
+.animate-parent--hover:hover .animate-flipOutX-child--hover {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+.animate-parent--hover:hover .animate-flipOutY-child--hover {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipOutY;
+  animation-name: flipOutY;
+}
+
+.animate-parent--hover:hover .animate-lightSpeedIn-child--hover {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+.animate-parent--hover:hover .animate-lightSpeedOut-child--hover {
+  -webkit-animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
+.animate-parent--hover:hover .animate-rotateIn-child--hover {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+}
+
+.animate-parent--hover:hover .animate-rotateInDownLeft-child--hover {
+  -webkit-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft;
+}
+
+.animate-parent--hover:hover .animate-rotateInDownRight-child--hover {
+  -webkit-animation-name: rotateInDownRight;
+  animation-name: rotateInDownRight;
+}
+
+.animate-parent--hover:hover .animate-rotateInUpLeft-child--hover {
+  -webkit-animation-name: rotateInUpLeft;
+  animation-name: rotateInUpLeft;
+}
+
+.animate-parent--hover:hover .animate-rotateInUpRight-child--hover {
+  -webkit-animation-name: rotateInUpRight;
+  animation-name: rotateInUpRight;
+}
+
+.animate-parent--hover:hover .animate-rotateOut-child--hover {
+  -webkit-animation-name: rotateOut;
+  animation-name: rotateOut;
+}
+
+.animate-parent--hover:hover .animate-rotateOutDownLeft-child--hover {
+  -webkit-animation-name: rotateOutDownLeft;
+  animation-name: rotateOutDownLeft;
+}
+
+.animate-parent--hover:hover .animate-rotateOutDownRight-child--hover {
+  -webkit-animation-name: rotateOutDownRight;
+  animation-name: rotateOutDownRight;
+}
+
+.animate-parent--hover:hover .animate-rotateOutUpLeft-child--hover {
+  -webkit-animation-name: rotateOutUpLeft;
+  animation-name: rotateOutUpLeft;
+}
+
+.animate-parent--hover:hover .animate-rotateOutUpRight-child--hover {
+  -webkit-animation-name: rotateOutUpRight;
+  animation-name: rotateOutUpRight;
+}
+
+.animate-parent--hover:hover .animate-hinge-child--hover {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: hinge;
+  animation-name: hinge;
+}
+
+.animate-parent--hover:hover .animate-jackInTheBox-child--hover {
+  -webkit-animation-name: jackInTheBox;
+  animation-name: jackInTheBox;
+}
+
+.animate-parent--hover:hover .animate-rollIn-child--hover {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn;
+}
+
+.animate-parent--hover:hover .animate-rollOut-child--hover {
+  -webkit-animation-name: rollOut;
+  animation-name: rollOut;
+}
+
+.animate-parent--hover:hover .animate-zoomIn-child--hover {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+.animate-parent--hover:hover .animate-zoomInDown-child--hover {
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+}
+
+.animate-parent--hover:hover .animate-zoomInLeft-child--hover {
+  -webkit-animation-name: zoomInLeft;
+  animation-name: zoomInLeft;
+}
+
+.animate-parent--hover:hover .animate-zoomInRight-child--hover {
+  -webkit-animation-name: zoomInRight;
+  animation-name: zoomInRight;
+}
+
+.animate-parent--hover:hover .animate-zoomInUp-child--hover {
+  -webkit-animation-name: zoomInUp;
+  animation-name: zoomInUp;
+}
+
+.animate-parent--hover:hover .animate-zoomOut-child--hover {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+}
+
+.animate-parent--hover:hover .animate-zoomOutDown-child--hover {
+  -webkit-animation-name: zoomOutDown;
+  animation-name: zoomOutDown;
+}
+
+.animate-parent--hover:hover .animate-zoomOutLeft-child--hover {
+  -webkit-animation-name: zoomOutLeft;
+  animation-name: zoomOutLeft;
+}
+
+.animate-parent--hover:hover .animate-zoomOutRight-child--hover {
+  -webkit-animation-name: zoomOutRight;
+  animation-name: zoomOutRight;
+}
+
+.animate-parent--hover:hover .animate-zoomOutUp-child--hover {
+  -webkit-animation-name: zoomOutUp;
+  animation-name: zoomOutUp;
+}
+
+.animate-parent--hover:hover .animate-slideInDown-child--hover {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+.animate-parent--hover:hover .animate-slideInLeft-child--hover {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+.animate-parent--hover:hover .animate-slideInRight-child--hover {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+.animate-parent--hover:hover .animate-slideInUp-child--hover {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+.animate-parent--hover:hover .animate-slideOutDown-child--hover {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown;
+}
+
+.animate-parent--hover:hover .animate-slideOutLeft-child--hover {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+}
+
+.animate-parent--hover:hover .animate-slideOutRight-child--hover {
+  -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight;
+}
+
+.animate-parent--hover:hover .animate-slideOutUp-child--hover {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+}

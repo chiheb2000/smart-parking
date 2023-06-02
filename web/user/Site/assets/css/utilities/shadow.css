@@ -1,0 +1,128 @@
+/* SHADOW */
+
+.shadow-1-top, .shadow-1-bottom,
+.shadow-2-top, .shadow-2-bottom,
+.shadow-3-top, .shadow-3-bottom,
+.shadow-4-top, .shadow-4-bottom,
+.shadow-5-top, .shadow-5-bottom,
+.shadow-6-top, .shadow-6-bottom,
+.shadow-7-top, .shadow-7-bottom,
+.shadow-8-top, .shadow-8-bottom,
+
+.shadow-1-top--hover, .shadow-1-bottom--hover,
+.shadow-2-top--hover, .shadow-2-bottom--hover,
+.shadow-3-top--hover, .shadow-3-bottom--hover,
+.shadow-4-top--hover, .shadow-4-bottom--hover,
+.shadow-5-top--hover, .shadow-5-bottom--hover,
+.shadow-6-top--hover, .shadow-6-bottom--hover,
+.shadow-7-top--hover, .shadow-7-bottom--hover,
+.shadow-8-top--hover, .shadow-8-bottom--hover {
+  position: relative;
+}
+.shadow-1-top::before,
+.shadow-2-top::before,
+.shadow-3-top::before,
+.shadow-4-top::before,
+.shadow-5-top::before,
+.shadow-6-top::before,
+.shadow-7-top::before,
+.shadow-8-top::before,
+
+.shadow-1-top--hover::before,
+.shadow-2-top--hover::before,
+.shadow-3-top--hover::before,
+.shadow-4-top--hover::before,
+.shadow-5-top--hover::before,
+.shadow-6-top--hover::before,
+.shadow-7-top--hover::before,
+.shadow-8-top--hover::before {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.shadow-1-bottom::after,
+.shadow-2-bottom::after,
+.shadow-3-bottom::after,
+.shadow-4-bottom::after,
+.shadow-5-bottom::after,
+.shadow-6-bottom::after,
+.shadow-7-bottom::after,
+.shadow-8-bottom::after,
+
+.shadow-1-bottom--hover::after,
+.shadow-2-bottom--hover::after,
+.shadow-3-bottom--hover::after,
+.shadow-4-bottom--hover::after,
+.shadow-5-bottom--hover::after,
+.shadow-6-bottom--hover::after,
+.shadow-7-bottom--hover::after,
+.shadow-8-bottom--hover::after {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 100%;
+}
+
+.shadow-1-top:before, .shadow-1-bottom:after, .shadow-1-top--hover:hover:before, .shadow-1-bottom--hover:hover:after { background-image: url('../../../assets/images/shadows/shadow-1.png'); }
+.shadow-2-top:before, .shadow-2-bottom:after, .shadow-2-top--hover:hover:before, .shadow-2-bottom--hover:hover:after { background-image: url('../../../assets/images/shadows/shadow-2.png'); }
+.shadow-3-top:before, .shadow-3-bottom:after, .shadow-3-top--hover:hover:before, .shadow-3-bottom--hover:hover:after { background-image: url('../../../assets/images/shadows/shadow-3.png'); }
+.shadow-4-top:before, .shadow-4-bottom:after, .shadow-4-top--hover:hover:before, .shadow-4-bottom--hover:hover:after { background-image: url('../../../assets/images/shadows/shadow-4.png'); }
+.shadow-5-top:before, .shadow-5-bottom:after, .shadow-5-top--hover:hover:before, .shadow-5-bottom--hover:hover:after { background-image: url('../../../assets/images/shadows/shadow-5.png'); }
+.shadow-6-top:before, .shadow-6-bottom:after, .shadow-6-top--hover:hover:before, .shadow-6-bottom--hover:hover:after { background-image: url('../../../assets/images/shadows/shadow-6.png'); }
+.shadow-7-top:before, .shadow-7-bottom:after, .shadow-7-top--hover:hover:before, .shadow-7-bottom--hover:hover:after { background-image: url('../../../assets/images/shadows/shadow-7.png'); }
+.shadow-8-top:before, .shadow-8-bottom:after, .shadow-8-top--hover:hover:before, .shadow-8-bottom--hover:hover:after { background-image: url('../../../assets/images/shadows/shadow-8.png'); }
+
+
+.shadow-1-top--hover::before,
+.shadow-2-top--hover::before,
+.shadow-3-top--hover::before,
+.shadow-4-top--hover::before,
+.shadow-5-top--hover::before,
+.shadow-6-top--hover::before,
+.shadow-7-top--hover::before,
+.shadow-8-top--hover::before,
+
+.shadow-1-bottom--hover::after,
+.shadow-2-bottom--hover::after,
+.shadow-3-bottom--hover::after,
+.shadow-4-bottom--hover::after,
+.shadow-5-bottom--hover::after,
+.shadow-6-bottom--hover::after,
+.shadow-7-bottom--hover::after,
+.shadow-8-bottom--hover::after {
+  opacity: 0;
+  transition-duration: 1s;
+}
+.shadow-1-top--hover:hover::before,
+.shadow-2-top--hover:hover::before,
+.shadow-3-top--hover:hover::before,
+.shadow-4-top--hover:hover::before,
+.shadow-5-top--hover:hover::before,
+.shadow-6-top--hover:hover::before,
+.shadow-7-top--hover:hover::before,
+.shadow-8-top--hover:hover::before,
+
+.shadow-1-bottom--hover:hover::after,
+.shadow-2-bottom--hover:hover::after,
+.shadow-3-bottom--hover:hover::after,
+.shadow-4-bottom--hover:hover::after,
+.shadow-5-bottom--hover:hover::after,
+.shadow-6-bottom--hover:hover::after,
+.shadow-7-bottom--hover:hover::after,
+.shadow-8-bottom--hover:hover::after {
+  opacity: 1;
+  transition-duration: 1s;
+}

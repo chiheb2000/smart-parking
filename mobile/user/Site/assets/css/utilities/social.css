@@ -1,0 +1,23 @@
+/* SOCIAL */
+
+.social a { 
+	text-align: center;
+	display: flex;
+	-ms-flex-pack: center!important;
+	justify-content: center!important;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+}
+
+.social.text-size-s1 a { width: 2rem; height: 2rem; line-height: 2rem; }
+.social.text-size-s2 a { width: 3rem; height: 3rem; line-height: 3rem; }
+.social.text-size-s3 a { width: 4rem; height: 4rem; line-height: 4rem; }
+.social.text-size-s4 a { width: 5rem; height: 5rem; line-height: 5rem; }
+.social.text-size-s5 a { width: 6rem; height: 6rem; line-height: 6rem; }
+
+/* FONT SIZE */
+.social.text-size-s1 { font-size: 1rem; }
+.social.text-size-s2 { font-size: 1.4rem; }
+.social.text-size-s3 { font-size: 1.8rem; }
+.social.text-size-s4 { font-size: 2.2rem; }
+.social.text-size-s5 { font-size: 2.8rem; }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn&SignUp</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/images/logo/nCbdXaxqvpcanRB.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form onsubmit="return false" class="sign-in-form">
+                    <h2 class="title">Se connecter</h2>
+
+                    <div class="input-field">
+                        <i class="	fas fa-envelope"></i>
+                        <input id="em" type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input id="pass" type="password" placeholder="Mot de passe" />
+                    </div>
+                    <input type="submit" onclick="login()" value="Login" class="btn solid" />
+                    <span id="error"></span>
+
+
+                </form>
+
+
+                <form onsubmit="return false" class="sign-up-form">
+                    <h2 class="title">S’inscrire</h2>
+                    <div class="input-field">
+                        <i class="	far fa-user-circle"></i>
+                        <input id="first" type="text" placeholder="Prénom" />
+                    </div>
+                    <div class="input-field">
+                        <i class="	far fa-user-circle"></i>
+                        <input id="last" type="text" placeholder="Nom de famille" />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input id="em1" type="email" placeholder="E-mail" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-phone"></i>
+                        <input id="tel" type="text" placeholder="Numéro de mobile" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input id="pass1" type="password" placeholder="Mot de passe " />
+                    </div>
+                    <input type="submit" onclick="ajout()" value="Sign Up" class="btn solid" />
+                    <span id="err1"></span>
+
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Créer nouveau compte</h3>
+                    <p>C’est rapide et facile.</p>
+                    <button class="btn transparent" id="sign-up-btn">S’inscrire</button>
+                </div>
+                <img src="./img/OSkwJeZSEgFduLA.png" class="image" alt="">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Identifiez-vous</h3>
+                    <p>Si vous avez déjà un compte.</p>
+                    <button class="btn transparent" id="sign-in-btn">Se connecter</button>
+                </div>
+                <img src="./img/img_201971.png" style="width: 300px; ;" class="image" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script>
+        function login() {
+            var error = document.getElementById("error")
+            var url = "http://127.0.0.1:3000/users"; //definir la collection a manupiler
+            var email = document.getElementById("em").value;
+            var password = document.getElementById("pass").value; // récupération de la password saisir dans notre code html
+            var xhr = new XMLHttpRequest(); // definir une request de connection standard js
+            xhr.open("GET", url, true); // choisir la méthode get comme une méthode d'accès au serveur et récupérer les données .
+            xhr.setRequestHeader("Content-type", "application/json; charset=utf-8"); // choisir l'encodage utf-8 pour que la resultat retourne peux avoir différents format de text comme les côté , les accent …..
+            xhr.onload = function() {
+                // load les données à partir de la serveur -> début connection
+                var users = JSON.parse(xhr.responseText); // conversion des données en format json
+                if (xhr.readyState == 4 && xhr.status == "200") {
+                    // if la status retourné par la serveur est 200 donc ont dans le cas succes
+                    access = false; // définir une variable access par défaut avec la valeur false
+                    /* bouclé la liste des utilisateurs */
+                    for (i = 0; i < users.length; i++) {
+                        if (users[i].email == email && users[i].password == password) {
+                            // if les données recuperer et la valeur auctual dans la base sont égaux alors en changer access a true .
+                            access = true;
+                            idUser = users[i]._id;
+                        }
+                    }
+
+                    // si la variable accès contient true on est autorisé à accéder.
+                    if (access) {
+
+                        localStorage.setItem("id", idUser);
+                        location.replace("index.html");
+                    } else {
+                        error.innerHTML = "<span style='color: red;'>" +
+                            "**Adresse ou mot de passe incorrect!!</span>"
+
+                    }
+                } else {
+                    alert("erreur de connexion");
+                }
+            };
+            xhr.send();
+        }
+    </script>
+    <script>
+        function ajout() {
+            var err1 = document.getElementById("err1")
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var mail = document.getElementById("em1").value;
+            if (mail.match(mailformat)) {
+                var url = "http://127.0.0.1:3000/users";
+                var data = {};
+                data.firstname = document.getElementById("first").value;
+                data.lastname = document.getElementById("last").value
+                data.email = document.getElementById("em1").value;
+                data.tel = document.getElementById("tel").value;
+                data.password = document.getElementById("pass1").value;
+
+
+
+                var json = JSON.stringify(data);
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", url, true);
+                xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+                xhr.onload = function() {
+                    var users = JSON.parse(xhr.responseText);
+                    if (xhr.readyState == 4 && xhr.status == "200") {
+                        console.table(users);
+                        alert("Merci pour votre inscription");
+                        location.replace("signin.html");
+                    } else {
+                        alert(users.message);
+                        console.table(users);
+                    }
+
+                }
+                xhr.send(json);
+            } else {
+                err1.innerHTML = "<span style='color: red;'>" +
+                    "**Email incorrect!!</span>"
+
+            }
+        }
+    </script>
+</body>
+
+</html>

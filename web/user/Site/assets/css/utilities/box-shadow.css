@@ -1,0 +1,63 @@
+/* BOX SHADOW */
+.box-shadow-v1-0,  .box-shadow-v1-0--hover:hover,  .box-shadow-v1-0--active.active  .box-shadow-parent--hover:hover .box-shadow-v1-0-child--hover,  .box-shadow-v1-0-child--active.active  { box-shadow: none; }
+.box-shadow-v1-s1, .box-shadow-v1-s1--hover:hover, .box-shadow-v1-s1--active.active, .box-shadow-parent--hover:hover .box-shadow-v1-s1-child--hover, .box-shadow-v1-s1-child--active.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+.box-shadow-v1-s2, .box-shadow-v1-s2--hover:hover, .box-shadow-v1-s2--active.active, .box-shadow-parent--hover:hover .box-shadow-v1-s2-child--hover, .box-shadow-v1-s2-child--active.active { box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+.box-shadow-v1-s3, .box-shadow-v1-s3--hover:hover, .box-shadow-v1-s3--active.active, .box-shadow-parent--hover:hover .box-shadow-v1-s3-child--hover, .box-shadow-v1-s3-child--active.active { box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); }
+.box-shadow-v1-s4, .box-shadow-v1-s4--hover:hover, .box-shadow-v1-s4--active.active, .box-shadow-parent--hover:hover .box-shadow-v1-s4-child--hover, .box-shadow-v1-s4-child--active.active { box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); }
+.box-shadow-v1-s5, .box-shadow-v1-s5--hover:hover, .box-shadow-v1-s5--active.active, .box-shadow-parent--hover:hover .box-shadow-v1-s5-child--hover, .box-shadow-v1-s5-child--active.active { box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
+
+.box-shadow-v2-0,  .box-shadow-v2-0--hover:hover,  .box-shadow-v2-0--active.active  .box-shadow-parent--hover:hover .box-shadow-v2-0-child--hover,  .box-shadow-v2-0-child--active.active  { box-shadow: none; }
+.box-shadow-v2-s1, .box-shadow-v2-s1--hover:hover, .box-shadow-v2-s1--active.active, .box-shadow-parent--hover:hover .box-shadow-v2-s1-child--hover, .box-shadow-v2-s1-child--active.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.box-shadow-v2-s2, .box-shadow-v2-s2--hover:hover, .box-shadow-v2-s2--active.active, .box-shadow-parent--hover:hover .box-shadow-v2-s2-child--hover, .box-shadow-v2-s2-child--active.active { box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+.box-shadow-v2-s3, .box-shadow-v2-s3--hover:hover, .box-shadow-v2-s3--active.active, .box-shadow-parent--hover:hover .box-shadow-v2-s3-child--hover, .box-shadow-v2-s3-child--active.active { box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); }
+.box-shadow-v2-s4, .box-shadow-v2-s4--hover:hover, .box-shadow-v2-s4--active.active, .box-shadow-parent--hover:hover .box-shadow-v2-s4-child--hover, .box-shadow-v2-s4-child--active.active { box-shadow: 0 0 40px rgba(0, 0, 0, 0.2); }
+.box-shadow-v2-s5, .box-shadow-v2-s5--hover:hover, .box-shadow-v2-s5--active.active, .box-shadow-parent--hover:hover .box-shadow-v2-s5-child--hover, .box-shadow-v2-s5-child--active.active { box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); }
+
+.box-shadow-v3-0,  .box-shadow-v3-0--hover:hover,  .box-shadow-v3-0--active.active  .box-shadow-parent--hover:hover .box-shadow-v3-0-child--hover,  .box-shadow-v3-0-child--active.active  { box-shadow: none; }
+.box-shadow-v3-s1, .box-shadow-v3-s1--hover:hover, .box-shadow-v3-s1--active.active, .box-shadow-parent--hover:hover .box-shadow-v3-s1-child--hover, .box-shadow-v3-s1-child--active.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+.box-shadow-v3-s2, .box-shadow-v3-s2--hover:hover, .box-shadow-v3-s2--active.active, .box-shadow-parent--hover:hover .box-shadow-v3-s2-child--hover, .box-shadow-v3-s2-child--active.active { box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+.box-shadow-v3-s3, .box-shadow-v3-s3--hover:hover, .box-shadow-v3-s3--active.active, .box-shadow-parent--hover:hover .box-shadow-v3-s3-child--hover, .box-shadow-v3-s3-child--active.active { box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
+.box-shadow-v3-s4, .box-shadow-v3-s4--hover:hover, .box-shadow-v3-s4--active.active, .box-shadow-parent--hover:hover .box-shadow-v3-s4-child--hover, .box-shadow-v3-s4-child--active.active { box-shadow: 0 0 40px rgba(0, 0, 0, 0.3); }
+.box-shadow-v3-s5, .box-shadow-v3-s5--hover:hover, .box-shadow-v3-s5--active.active, .box-shadow-parent--hover:hover .box-shadow-v3-s5-child--hover, .box-shadow-v3-s5-child--active.active { box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); }
+
+.box-shadow-v4-0,  .box-shadow-v4-0--hover:hover,  .box-shadow-v4-0--active.active  .box-shadow-parent--hover:hover .box-shadow-v4-0-child--hover,  .box-shadow-v4-0-child--active.active  { box-shadow: none; }
+.box-shadow-v4-s1, .box-shadow-v4-s1--hover:hover, .box-shadow-v4-s1--active.active, .box-shadow-parent--hover:hover .box-shadow-v4-s1-child--hover, .box-shadow-v4-s1-child--active.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+.box-shadow-v4-s2, .box-shadow-v4-s2--hover:hover, .box-shadow-v4-s2--active.active, .box-shadow-parent--hover:hover .box-shadow-v4-s2-child--hover, .box-shadow-v4-s2-child--active.active { box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
+.box-shadow-v4-s3, .box-shadow-v4-s3--hover:hover, .box-shadow-v4-s3--active.active, .box-shadow-parent--hover:hover .box-shadow-v4-s3-child--hover, .box-shadow-v4-s3-child--active.active { box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); }
+.box-shadow-v4-s4, .box-shadow-v4-s4--hover:hover, .box-shadow-v4-s4--active.active, .box-shadow-parent--hover:hover .box-shadow-v4-s4-child--hover, .box-shadow-v4-s4-child--active.active { box-shadow: 0 0 40px rgba(0, 0, 0, 0.4); }
+.box-shadow-v4-s5, .box-shadow-v4-s5--hover:hover, .box-shadow-v4-s5--active.active, .box-shadow-parent--hover:hover .box-shadow-v4-s5-child--hover, .box-shadow-v4-s5-child--active.active { box-shadow: 0 0 50px rgba(0, 0, 0, 0.4); }
+
+.box-shadow-v5-0,  .box-shadow-v5-0--hover:hover,  .box-shadow-v5-0--active.active  .box-shadow-parent--hover:hover .box-shadow-v5-0-child--hover,  .box-shadow-v5-0-child--active.active  { box-shadow: none; }
+.box-shadow-v5-s1, .box-shadow-v5-s1--hover:hover, .box-shadow-v5-s1--active.active, .box-shadow-parent--hover:hover .box-shadow-v5-s1-child--hover, .box-shadow-v5-s1-child--active.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+.box-shadow-v5-s2, .box-shadow-v5-s2--hover:hover, .box-shadow-v5-s2--active.active, .box-shadow-parent--hover:hover .box-shadow-v5-s2-child--hover, .box-shadow-v5-s2-child--active.active { box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+.box-shadow-v5-s3, .box-shadow-v5-s3--hover:hover, .box-shadow-v5-s3--active.active, .box-shadow-parent--hover:hover .box-shadow-v5-s3-child--hover, .box-shadow-v5-s3-child--active.active { box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+.box-shadow-v5-s4, .box-shadow-v5-s4--hover:hover, .box-shadow-v5-s4--active.active, .box-shadow-parent--hover:hover .box-shadow-v5-s4-child--hover, .box-shadow-v5-s4-child--active.active { box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); }
+.box-shadow-v5-s5, .box-shadow-v5-s5--hover:hover, .box-shadow-v5-s5--active.active, .box-shadow-parent--hover:hover .box-shadow-v5-s5-child--hover, .box-shadow-v5-s5-child--active.active { box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); }
+
+.box-shadow-v6-0,  .box-shadow-v6-0--hover:hover,  .box-shadow-v6-0--active.active  .box-shadow-parent--hover:hover .box-shadow-v6-0-child--hover,  .box-shadow-v6-0-child--active.active  { box-shadow: none; }
+.box-shadow-v6-s1, .box-shadow-v6-s1--hover:hover, .box-shadow-v6-s1--active.active, .box-shadow-parent--hover:hover .box-shadow-v6-s1-child--hover, .box-shadow-v6-s1-child--active.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); }
+.box-shadow-v6-s2, .box-shadow-v6-s2--hover:hover, .box-shadow-v6-s2--active.active, .box-shadow-parent--hover:hover .box-shadow-v6-s2-child--hover, .box-shadow-v6-s2-child--active.active { box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
+.box-shadow-v6-s3, .box-shadow-v6-s3--hover:hover, .box-shadow-v6-s3--active.active, .box-shadow-parent--hover:hover .box-shadow-v6-s3-child--hover, .box-shadow-v6-s3-child--active.active { box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); }
+.box-shadow-v6-s4, .box-shadow-v6-s4--hover:hover, .box-shadow-v6-s4--active.active, .box-shadow-parent--hover:hover .box-shadow-v6-s4-child--hover, .box-shadow-v6-s4-child--active.active { box-shadow: 0 0 40px rgba(0, 0, 0, 0.6); }
+.box-shadow-v6-s5, .box-shadow-v6-s5--hover:hover, .box-shadow-v6-s5--active.active, .box-shadow-parent--hover:hover .box-shadow-v6-s5-child--hover, .box-shadow-v6-s5-child--active.active { box-shadow: 0 0 50px rgba(0, 0, 0, 0.6); }
+
+.box-shadow-v7-0,  .box-shadow-v7-0--hover:hover,  .box-shadow-v7-0--active.active  .box-shadow-parent--hover:hover .box-shadow-v7-0-child--hover,  .box-shadow-v7-0-child--active.active  { box-shadow: none; }
+.box-shadow-v7-s1, .box-shadow-v7-s1--hover:hover, .box-shadow-v7-s1--active.active, .box-shadow-parent--hover:hover .box-shadow-v7-s1-child--hover, .box-shadow-v7-s1-child--active.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+.box-shadow-v7-s2, .box-shadow-v7-s2--hover:hover, .box-shadow-v7-s2--active.active, .box-shadow-parent--hover:hover .box-shadow-v7-s2-child--hover, .box-shadow-v7-s2-child--active.active { box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
+.box-shadow-v7-s3, .box-shadow-v7-s3--hover:hover, .box-shadow-v7-s3--active.active, .box-shadow-parent--hover:hover .box-shadow-v7-s3-child--hover, .box-shadow-v7-s3-child--active.active { box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); }
+.box-shadow-v7-s4, .box-shadow-v7-s4--hover:hover, .box-shadow-v7-s4--active.active, .box-shadow-parent--hover:hover .box-shadow-v7-s4-child--hover, .box-shadow-v7-s4-child--active.active { box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); }
+.box-shadow-v7-s5, .box-shadow-v7-s5--hover:hover, .box-shadow-v7-s5--active.active, .box-shadow-parent--hover:hover .box-shadow-v7-s5-child--hover, .box-shadow-v7-s5-child--active.active { box-shadow: 0 0 50px rgba(0, 0, 0, 0.7); }
+
+.box-shadow-v8-0,  .box-shadow-v8-0--hover:hover,  .box-shadow-v8-0--active.active  .box-shadow-parent--hover:hover .box-shadow-v8-0-child--hover,  .box-shadow-v8-0-child--active.active  { box-shadow: none; }
+.box-shadow-v8-s1, .box-shadow-v8-s1--hover:hover, .box-shadow-v8-s1--active.active, .box-shadow-parent--hover:hover .box-shadow-v8-s1-child--hover, .box-shadow-v8-s1-child--active.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
+.box-shadow-v8-s2, .box-shadow-v8-s2--hover:hover, .box-shadow-v8-s2--active.active, .box-shadow-parent--hover:hover .box-shadow-v8-s2-child--hover, .box-shadow-v8-s2-child--active.active { box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+.box-shadow-v8-s3, .box-shadow-v8-s3--hover:hover, .box-shadow-v8-s3--active.active, .box-shadow-parent--hover:hover .box-shadow-v8-s3-child--hover, .box-shadow-v8-s3-child--active.active { box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); }
+.box-shadow-v8-s4, .box-shadow-v8-s4--hover:hover, .box-shadow-v8-s4--active.active, .box-shadow-parent--hover:hover .box-shadow-v8-s4-child--hover, .box-shadow-v8-s4-child--active.active { box-shadow: 0 0 40px rgba(0, 0, 0, 0.8); }
+.box-shadow-v8-s5, .box-shadow-v8-s5--hover:hover, .box-shadow-v8-s5--active.active, .box-shadow-parent--hover:hover .box-shadow-v8-s5-child--hover, .box-shadow-v8-s5-child--active.active { box-shadow: 0 0 50px rgba(0, 0, 0, 0.8); }
+
+.box-shadow-v9-0,  .box-shadow-v9-0--hover:hover,  .box-shadow-v9-0--active.active  .box-shadow-parent--hover:hover .box-shadow-v9-0-child--hover,  .box-shadow-v9-0-child--active.active  { box-shadow: none; }
+.box-shadow-v9-s1, .box-shadow-v9-s1--hover:hover, .box-shadow-v9-s1--active.active, .box-shadow-parent--hover:hover .box-shadow-v9-s1-child--hover, .box-shadow-v9-s1-child--active.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); }
+.box-shadow-v9-s2, .box-shadow-v9-s2--hover:hover, .box-shadow-v9-s2--active.active, .box-shadow-parent--hover:hover .box-shadow-v9-s2-child--hover, .box-shadow-v9-s2-child--active.active { box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); }
+.box-shadow-v9-s3, .box-shadow-v9-s3--hover:hover, .box-shadow-v9-s3--active.active, .box-shadow-parent--hover:hover .box-shadow-v9-s3-child--hover, .box-shadow-v9-s3-child--active.active { box-shadow: 0 0 30px rgba(0, 0, 0, 0.9); }
+.box-shadow-v9-s4, .box-shadow-v9-s4--hover:hover, .box-shadow-v9-s4--active.active, .box-shadow-parent--hover:hover .box-shadow-v9-s4-child--hover, .box-shadow-v9-s4-child--active.active { box-shadow: 0 0 40px rgba(0, 0, 0, 0.9); }
+.box-shadow-v9-s5, .box-shadow-v9-s5--hover:hover, .box-shadow-v9-s5--active.active, .box-shadow-parent--hover:hover .box-shadow-v9-s5-child--hover, .box-shadow-v9-s5-child--active.active { box-shadow: 0 0 50px rgba(0, 0, 0, 0.9); }

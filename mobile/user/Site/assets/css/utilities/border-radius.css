@@ -1,0 +1,104 @@
+/* BORDER RADIUS */
+.rounded-s1 { border-radius: 0.15rem !important; }
+.rounded-s2 { border-radius: 0.30rem !important; }
+.rounded-s3 { border-radius: 0.50rem !important; }
+.rounded-s4 { border-radius: 0.80rem !important; }
+.rounded-s5 { border-radius: 100rem !important; }
+
+.rounded-tl-s1 { border-top-left-radius: 0.15rem !important; }
+.rounded-tl-s2 { border-top-left-radius: 0.30rem !important; }
+.rounded-tl-s3 { border-top-left-radius: 0.50rem !important; }
+.rounded-tl-s4 { border-top-left-radius: 0.80rem !important; }
+.rounded-tl-s5 { border-top-left-radius: 100rem !important; }
+
+.rounded-tr-s1 { border-top-right-radius: 0.15rem !important; }
+.rounded-tr-s2 { border-top-right-radius: 0.30rem !important; }
+.rounded-tr-s3 { border-top-right-radius: 0.50rem !important; }
+.rounded-tr-s4 { border-top-right-radius: 0.80rem !important; }
+.rounded-tr-s5 { border-top-right-radius: 100rem !important; }
+
+.rounded-bl-s1 { border-bottom-left-radius: 0.15rem !important; }
+.rounded-bl-s2 { border-bottom-left-radius: 0.30rem !important; }
+.rounded-bl-s3 { border-bottom-left-radius: 0.50rem !important; }
+.rounded-bl-s4 { border-bottom-left-radius: 0.80rem !important; }
+.rounded-bl-s5 { border-bottom-left-radius: 100rem !important; }
+
+.rounded-br-s1 { border-bottom-right-radius: 0.15rem !important; }
+.rounded-br-s2 { border-bottom-right-radius: 0.30rem !important; }
+.rounded-br-s3 { border-bottom-right-radius: 0.50rem !important; }
+.rounded-br-s4 { border-bottom-right-radius: 0.80rem !important; }
+.rounded-br-s5 { border-bottom-right-radius: 100rem !important; }
+
+.rounded-s1--hover:hover { border-radius: 0.15rem !important; }
+.rounded-s2--hover:hover { border-radius: 0.30rem !important; }
+.rounded-s3--hover:hover { border-radius: 0.50rem !important; }
+.rounded-s4--hover:hover { border-radius: 0.80rem !important; }
+.rounded-s5--hover:hover { border-radius: 100rem !important; }
+
+.rounded-tl-s1--hover:hover { border-top-left-radius: 0.15rem !important; }
+.rounded-tl-s2--hover:hover { border-top-left-radius: 0.30rem !important; }
+.rounded-tl-s3--hover:hover { border-top-left-radius: 0.50rem !important; }
+.rounded-tl-s4--hover:hover { border-top-left-radius: 0.80rem !important; }
+.rounded-tl-s5--hover:hover { border-top-left-radius: 100rem !important; }
+
+.rounded-tr-s1--hover:hover { border-top-right-radius: 0.15rem !important; }
+.rounded-tr-s2--hover:hover { border-top-right-radius: 0.30rem !important; }
+.rounded-tr-s3--hover:hover { border-top-right-radius: 0.50rem !important; }
+.rounded-tr-s4--hover:hover { border-top-right-radius: 0.80rem !important; }
+.rounded-tr-s5--hover:hover { border-top-right-radius: 100rem !important; }
+
+.rounded-bl-s1--hover:hover { border-bottom-left-radius: 0.15rem !important; }
+.rounded-bl-s2--hover:hover { border-bottom-left-radius: 0.30rem !important; }
+.rounded-bl-s3--hover:hover { border-bottom-left-radius: 0.50rem !important; }
+.rounded-bl-s4--hover:hover { border-bottom-left-radius: 0.80rem !important; }
+.rounded-bl-s5--hover:hover { border-bottom-left-radius: 100rem !important; }
+
+.rounded-br-s1--hover:hover { border-bottom-right-radius: 0.15rem !important; }
+.rounded-br-s2--hover:hover { border-bottom-right-radius: 0.30rem !important; }
+.rounded-br-s3--hover:hover { border-bottom-right-radius: 0.50rem !important; }
+.rounded-br-s4--hover:hover { border-bottom-right-radius: 0.80rem !important; }
+.rounded-br-s5--hover:hover { border-bottom-right-radius: 100rem !important; }
+
+.rounded--hover:hover 			{ border-radius: 0.15rem !important; }
+.rounded-top--hover:hover 		{ border-top-left-radius: 0.15rem !important; border-top-right-radius: 0.15rem !important; }
+.rounded-right--hover:hover 	{ border-top-right-radius: 0.15rem !important; border-bottom-right-radius: 0.15rem !important; }
+.rounded-bottom--hover:hover 	{ border-bottom-right-radius: 0.15rem !important; border-bottom-left-radius: 0.15rem !important; }
+.rounded-left--hover:hover 		{ border-top-left-radius: 0.15rem !important; border-bottom-left-radius: 0.15rem !important; }
+.rounded-circle--hover:hover 	{ border-radius: 100% !important; }
+
+.rounded-parent--hover:hover .rounded-s1-child--hover { border-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-s2-child--hover { border-radius: 0.30rem !important; }
+.rounded-parent--hover:hover .rounded-s3-child--hover { border-radius: 0.50rem !important; }
+.rounded-parent--hover:hover .rounded-s4-child--hover { border-radius: 0.80rem !important; }
+.rounded-parent--hover:hover .rounded-s5-child--hover { border-radius: 100rem !important; }
+
+.rounded-parent--hover:hover .rounded-tl-s1-child--hover { border-top-left-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-tl-s2-child--hover { border-top-left-radius: 0.30rem !important; }
+.rounded-parent--hover:hover .rounded-tl-s3-child--hover { border-top-left-radius: 0.50rem !important; }
+.rounded-parent--hover:hover .rounded-tl-s4-child--hover { border-top-left-radius: 0.80rem !important; }
+.rounded-parent--hover:hover .rounded-tl-s5-child--hover { border-top-left-radius: 100rem !important; }
+
+.rounded-parent--hover:hover .rounded-tr-s1-child--hover { border-top-right-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-tr-s2-child--hover { border-top-right-radius: 0.30rem !important; }
+.rounded-parent--hover:hover .rounded-tr-s3-child--hover { border-top-right-radius: 0.50rem !important; }
+.rounded-parent--hover:hover .rounded-tr-s4-child--hover { border-top-right-radius: 0.80rem !important; }
+.rounded-parent--hover:hover .rounded-tr-s5-child--hover { border-top-right-radius: 100rem !important; }
+
+.rounded-parent--hover:hover .rounded-bl-s1-child--hover { border-bottom-left-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-bl-s2-child--hover { border-bottom-left-radius: 0.30rem !important; }
+.rounded-parent--hover:hover .rounded-bl-s3-child--hover { border-bottom-left-radius: 0.50rem !important; }
+.rounded-parent--hover:hover .rounded-bl-s4-child--hover { border-bottom-left-radius: 0.80rem !important; }
+.rounded-parent--hover:hover .rounded-bl-s5-child--hover { border-bottom-left-radius: 100rem !important; }
+
+.rounded-parent--hover:hover .rounded-br-s1-child--hover { border-bottom-right-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-br-s2-child--hover { border-bottom-right-radius: 0.30rem !important; }
+.rounded-parent--hover:hover .rounded-br-s3-child--hover { border-bottom-right-radius: 0.50rem !important; }
+.rounded-parent--hover:hover .rounded-br-s4-child--hover { border-bottom-right-radius: 0.80rem !important; }
+.rounded-parent--hover:hover .rounded-br-s5-child--hover { border-bottom-right-radius: 100rem !important; }
+
+.rounded-parent--hover:hover .rounded-child--hover 			{ border-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-top-child--hover 		{ border-top-left-radius: 0.15rem !important; border-top-right-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-right-child--hover 	{ border-top-right-radius: 0.15rem !important; border-bottom-right-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-bottom-child--hover 	{ border-bottom-right-radius: 0.15rem !important; border-bottom-left-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-left-child--hover 	{ border-top-left-radius: 0.15rem !important; border-bottom-left-radius: 0.15rem !important; }
+.rounded-parent--hover:hover .rounded-circle-child--hover 	{ border-radius: 100% !important; }

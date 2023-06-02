@@ -1,0 +1,506 @@
+<script>
+    if (!localStorage.getItem("idAdm")) {
+        location.replace("login.html");
+    }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>updatePar</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="icon" type="image/png" href="images/icons/c1.ico" />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake img-circle" src="ca1.png" alt="AdminLTELogo" height="90" width="90">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="" id="img1" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="profile.html" class="d-block" id="username1"></a>
+                    </div>
+                </div>
+
+
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item ">
+                            <a href="index.html" class="nav-link ">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+
+                                </p>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>
+                                    Ajouter des Admins
+                                    <i class="fas fa-angle-left right"></i>
+
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="addAdm.html" class="nav-link">
+                                        <i class="nav-icon fas fa-user-plus"></i>
+                                        <p>ADD</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="listAdm.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>List</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="listUsr.html" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    List User
+
+                                </p>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-parking"></i>
+                                <p>
+                                    les parkings
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="addPar.html" class="nav-link">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>ADD</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="listPar.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>List</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="listRev.html" class="nav-link">
+                                <i class="fas fa-chart-pie"></i>
+                                <p>
+                                    Statistique
+
+                                </p>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="avis.html" class="nav-link">
+                                <i class="nav-icon fas fa-comments"></i>
+                                <p>
+                                    Avis
+
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="exemple.html" class="nav-link">
+                                <i class="far fa-folder-open"></i>
+                                <p>
+                                    Exemple
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" onclick="logout()" class="nav-link">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <p>
+                                    Se déconnecter
+
+                                </p>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+
+
+            <!-- Main content -->
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <!-- Navbar-->
+
+
+
+                            <div class="container">
+                                <div class="row py-5 mt-4 align-items-center">
+                                    <!-- For Demo Purpose -->
+                                    <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+                                        <img src="up.jpg" alt="" class="img-fluid mb-3 d-none d-md-block">
+
+
+                                    </div>
+
+                                    <!-- Registeration Form -->
+                                    <div class="col-md-7 col-lg-6 ml-auto">
+                                        <form onsubmit="return false">
+                                            <div class="row">
+
+                                                <!-- First Name -->
+                                                <div class="input-group col-lg-12 mb-4">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                                 <i class="fa fa-parking text-muted"></i>
+                                                  </span>
+                                                    </div>
+                                                    <input id="namePar" type="text" name="namePar" placeholder="namePar" class="form-control bg-white border-left-0 border-md">
+                                                </div>
+                                                <!-- Email Address -->
+                                                <div class="input-group col-lg-12 mb-4">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fas fa-map-marker-alt text-muted"></i>
+                            </span>
+                                                    </div>
+                                                    <input id="localisation" type="text" name="localisation" placeholder="localisation" class="form-control bg-white border-left-0 border-md">
+                                                </div>
+                                                <!-- Password -->
+                                                <div class="input-group col-lg-6 mb-4">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                                     <i class="fas fa-crosshairs text-muted"></i>
+                                    </span>
+                                                    </div>
+
+                                                    <input id="x" type="number" name="Longitude" placeholder="Longitude" class="form-control bg-white border-left-0 border-md">
+
+                                                </div>
+                                                <div class="input-group col-lg-6 mb-4">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                        <i class="fas fa-crosshairs text-muted"></i>
+                                    </span>
+                                                    </div>
+
+                                                    <input id="y" type="number" name="Latitude" placeholder="Latitude" class="form-control bg-white border-left-0 border-md">
+
+                                                </div>
+                                                <div class="input-group col-lg-12 mb-4">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fas fa-ruler-combined text-muted"></i>
+                            </span>
+                                                    </div>
+
+                                                    <input id="dimensions" type="text" name="dimensions " placeholder="dimensions " class="form-control bg-white border-md border-left-0 pl-3">
+                                                </div>
+
+
+
+                                                <!-- Phone Number -->
+                                                <div class="input-group col-lg-12 mb-4">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fas fa-sort-numeric-down text-muted"></i>
+                            </span>
+                                                    </div>
+
+                                                    <input id="nbre" type="number" name="Capacité " placeholder="Capacité " class="form-control bg-white border-md border-left-0 pl-3">
+                                                </div>
+                                                <!-- Password -->
+                                                <div class="input-group col-lg-4 mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                            <i class="fas fa-donate text-muted"></i>
+                                        </span>
+                                                    </div>
+
+                                                    <input id="heure" type="number" name="heure" placeholder="heure" class="form-control bg-white border-left-0 border-md">
+
+                                                </div>
+                                                <div class="input-group col-lg-4 mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                            <i class="fas fa-donate text-muted"></i>
+                                        </span>
+                                                    </div>
+
+                                                    <input id="jour" type="number" name="jour" placeholder="jour" class="form-control bg-white border-left-0 border-md">
+
+                                                </div>
+                                                <div class="input-group col-lg-4 mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                            <i class="fas fa-donate text-muted"></i>
+                                        </span>
+                                                    </div>
+
+                                                    <input id="mois" type="number" name="mois" placeholder="mois" class="form-control bg-white border-left-0 border-md">
+
+                                                </div>
+                                                <!-- Submit Button -->
+                                                <div class="form-group col-lg-12 mx-auto mb-0">
+                                                    <button type="button" class="btn btn-primary btn-block py-2" onclick="update()">
+                                                        <span class="font-weight-bold">Confirmer</span>
+                                                    </button>
+                                                </div>
+
+
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <strong>Copyright &copy; 2022 <a href="https://chaabengroup.com">Chaaben Technology Group</a>.</strong> All rights reserved.
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 1.0
+                </div>
+            </footer>
+
+            <script>
+                var url_string = window.location.href //url_string = "file:///G:/Nouveau%20dossier%20(2)/Projet/exemple/update.html?id=622f561c55f6fc4688bdf4b2"
+                var url = new URL(url_string); //url = file:///G:/Nouveau%20dossier%20(2)/Projet/exemple/update.html?id=622f561c55f6fc4688bdf4b2
+                var c = url.searchParams.get("id"); //c = 622f561c55f6fc4688bdf4b2
+                console.log(c);
+
+                // Post a user
+                var url3 = "http://172.20.10.4:3000/parkings/" + c;
+                var xhr3 = new XMLHttpRequest();
+                xhr3.open("GET", url3, true);
+
+                xhr3.onload = function() {
+                    var parkings = JSON.parse(xhr3.responseText);
+                    if (xhr3.readyState == 4 && xhr3.status == "200") {
+                        document.getElementById("namePar").value = parkings.namePar;
+                        document.getElementById("localisation").value = parkings.localisation;
+                        document.getElementById("x").value = parkings.x;
+                        document.getElementById("y").value = parkings.y;
+                        document.getElementById("dimensions").value = parkings.dimensions;
+                        document.getElementById("nbre").value = parkings.nbre;
+                        document.getElementById("heure").value = parkings.heure;
+                        document.getElementById("jour").value = parkings.jour;
+                        document.getElementById("mois").value = parkings.mois;
+                    } else {
+
+                        console.log("error");
+                    }
+                }
+
+                xhr3.send(null);
+                //`<a href="update.html?id=`+i._id+`">Update</a>`
+                function update() {
+                    var url_string = window.location.href
+                    var url = new URL(url_string);
+                    var c = url.searchParams.get("id");
+
+                    var url = "http://172.20.10.4:3000/parkings/" + c;
+
+                    var data = {};
+                    data.namePar = document.getElementById("namePar").value;
+                    data.localisation = document.getElementById("localisation").value;
+                    data.x = document.getElementById("x").value;
+                    data.y = document.getElementById("y").value;
+                    data.dimensions = document.getElementById("dimensions").value;
+                    data.nbre = document.getElementById("nbre").value;
+                    data.heure = document.getElementById("heure").value;
+                    data.jour = document.getElementById("jour").value;
+                    data.mois = document.getElementById("mois").value;
+                    var json = JSON.stringify(data);
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("PUT", url, true);
+                    xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+                    xhr.onload = function() {
+                        var parkings = JSON.parse(xhr.responseText);
+                        if (xhr.readyState == 4 && xhr.status == "200") {
+
+                            location.replace("listPar.html");
+                        } else {
+                            console.error(parkings);
+                            location.replace("admins.html");
+                        }
+                    }
+                    xhr.send(json);
+
+                }
+            </script>
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery -->
+        <script src="plugins/jquery/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+        <script>
+            $.widget.bridge('uibutton', $.ui.button)
+        </script>
+        <!-- Bootstrap 4 -->
+        <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- ChartJS -->
+        <script src="plugins/chart.js/Chart.min.js"></script>
+        <!-- Sparkline -->
+        <script src="plugins/sparklines/sparkline.js"></script>
+        <!-- JQVMap -->
+        <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+        <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+        <!-- jQuery Knob Chart -->
+        <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+        <!-- daterangepicker -->
+        <script src="plugins/moment/moment.min.js"></script>
+        <script src="plugins/daterangepicker/daterangepicker.js"></script>
+        <!-- Tempusdominus Bootstrap 4 -->
+        <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+        <!-- Summernote -->
+        <script src="plugins/summernote/summernote-bs4.min.js"></script>
+        <!-- overlayScrollbars -->
+        <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="dist/js/adminlte.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="dist/js/demo.js"></script>
+        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+        <script src="dist/js/pages/dashboard.js"></script>
+        <script>
+            var c = localStorage.getItem("idAdm");
+            console.log(c);
+
+
+            var url1 = "http://172.20.10.4:3000/admins/" + c;
+            var xhr1 = new XMLHttpRequest();
+            xhr1.open("GET", url1, true);
+
+            xhr1.onload = function() {
+                var admins = JSON.parse(xhr1.responseText);
+                if (xhr1.readyState == 4 && xhr1.status == "200") {
+                    document.getElementById("username1").innerHTML = admins.username;
+                    document.getElementById("img1").src = admins.img;
+
+                } else {
+
+                    console.log("error");
+                }
+            }
+
+            xhr1.send(null);
+        </script>
+        <script>
+            function logout() {
+
+                localStorage.removeItem("idAdm");
+                location.replace("login.html");
+
+            }
+        </script>
+
+</body>
+
+</html>
