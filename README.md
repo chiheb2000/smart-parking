@@ -36,10 +36,6 @@ The project was developed in three sprints following the Scrum methodology:
 - **Sprint 2:** Parking management, including adding, editing, and deleting parking spaces.
 - **Sprint 3:** Development of the embedded system and integration with the mobile and web applications.
 
-## 🌟 Contributors
-
-- **Baya Chatti Chihebeddine** - *Lead Developer* - [LinkedIn](https://www.linkedin.com/in/chihebeddine-baya-chatti/)
-
 
 
 ## 📬 Contact
