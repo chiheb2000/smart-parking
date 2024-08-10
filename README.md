@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/664944a3-bcf8-40db-b01c-fd01381c50de" alt="Smart Parking Logo" width="200">
+</div>
 # 🚗 Smart Parking
 
 ## 📚 Project Overview
