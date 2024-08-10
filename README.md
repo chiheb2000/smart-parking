@@ -1,9 +1,9 @@
+
+
+# 🚗 Smart Parking
 <div align="center">
   <img src="https://github.com/user-attachments/assets/664944a3-bcf8-40db-b01c-fd01381c50de" alt="Smart Parking Logo" width="200">
 </div>
-
-# 🚗 Smart Parking
-
 ## 📚 Project Overview
 
 **Smart Parking** is a final year project aimed at solving the problem of parking in congested urban areas by providing a smart and efficient parking management system. 
