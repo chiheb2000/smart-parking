@@ -1,7 +1,7 @@
 
 
 # 🚗 Smart Parking
-<div align="center" style="background-color:#f0f0f0;padding:20px;border-radius:10px;">
+<div align="center">
   <img src="https://github.com/user-attachments/assets/664944a3-bcf8-40db-b01c-fd01381c50de" alt="Smart Parking Logo" width="200">
 </div>
 ## 📚 Project Overview
