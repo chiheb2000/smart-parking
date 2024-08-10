@@ -45,5 +45,5 @@ The project was developed in three sprints following the Scrum methodology:
 ## 📬 Contact
 
 For any questions, please contact [📧 chattichiheb35@gmail.com](mailto:chattichiheb35@gmail.com).
-- **Baya Chatti Chihebeddine** - *Profile LinkedIn* - [LinkedIn](https://www.linkedin.com/in/chihebeddine-baya-chatti/)
+- **Baya Chatti Chihebeddine**  [Profile LinkedIn](https://www.linkedin.com/in/chihebeddine-baya-chatti/)
 
